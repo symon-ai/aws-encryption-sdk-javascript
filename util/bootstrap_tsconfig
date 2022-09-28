@@ -27,7 +27,7 @@ execAsync(lernaLs)
     writeFileSync('./tsconfig.module.json', JSON.stringify({...tsconfig, references}, null, '  '))
   })
 
-const namespace = '@aws-crypto/'
+const namespace = '@symon-ai/'
 function clean ({ stdout, stderr }) {
   return stdout.split('\n')
     .filter(l => l.startsWith(namespace))
