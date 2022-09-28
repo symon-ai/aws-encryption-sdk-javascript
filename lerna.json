@@ -4,6 +4,10 @@
   ],
   "version": "3.2.0",
   "command": {
+    "publish": {
+			"message": "chore(release): publish",
+			"registry": "https://npm.pkg.github.com"
+		},
     "bootstrap": {
       "nohoist": [
         "typedoc"
