@@ -16,7 +16,7 @@ import {
   unwrapDataKey,
   KeyringTraceFlag,
 } from '@aws-crypto/material-management-node'
-import { KMS } from 'aws-sdk'
+import { KMSClient } from '@aws-sdk/client-kms'
 
 chai.use(chaiAsPromised)
 const { expect } = chai
@@ -67,13 +67,13 @@ describe('AwsKmsMrkAwareSymmetricKeyringNode encrypt/decrypt', () => {
   )
 
   const encryptKeyring = new AwsKmsMrkAwareSymmetricKeyringNode({
-    client: new KMS({ region: 'us-west-2' }),
+    client: new KMSClient({ region: 'us-west-2' }),
     keyId: westKeyId,
     grantTokens,
   })
 
   const decryptKeyring = new AwsKmsMrkAwareSymmetricKeyringNode({
-    client: new KMS({ region: 'us-east-1' }),
+    client: new KMSClient({ region: 'us-east-1' }),
     keyId: eastKeyId,
     grantTokens,
   })

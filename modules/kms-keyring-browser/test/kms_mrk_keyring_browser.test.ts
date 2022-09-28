@@ -15,7 +15,7 @@ import {
   WebCryptoDecryptionMaterial,
   KeyringTraceFlag,
 } from '@aws-crypto/material-management-browser'
-import { KMS } from 'aws-sdk'
+import { KMSClient } from '@aws-sdk/client-kms'
 
 chai.use(chaiAsPromised)
 const { expect } = chai
@@ -62,12 +62,12 @@ describe('AwsKmsMrkAwareSymmetricKeyringBrowser encrypt/decrypt', () => {
   )
 
   const encryptKeyring = new AwsKmsMrkAwareSymmetricKeyringBrowser({
-    client: new KMS({ region: 'us-west-2', credentials }),
+    client: new KMSClient({ region: 'us-west-2', credentials }),
     keyId: westKeyId,
     grantTokens,
   })
   const decryptKeyring = new AwsKmsMrkAwareSymmetricKeyringBrowser({
-    client: new KMS({ region: 'us-east-1', credentials }),
+    client: new KMSClient({ region: 'us-east-1', credentials }),
     keyId: eastKeyId,
     grantTokens,
   })

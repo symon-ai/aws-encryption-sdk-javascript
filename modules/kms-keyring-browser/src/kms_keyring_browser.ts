@@ -22,23 +22,23 @@ import {
   KeyringWebCrypto,
   Newable,
 } from '@aws-crypto/material-management-browser'
-import { KMS } from 'aws-sdk'
+import { KMSClient, KMSClientConfig } from '@aws-sdk/client-kms'
 import { version } from './version'
-const getKmsClient = getClient(KMS, {
+const getKmsClient = getClient(KMSClient, {
   customUserAgent: `AwsEncryptionSdkJavascriptBrowser/${version}`,
 })
 const cacheKmsClients = cacheClients(getKmsClient)
 
-export type KmsKeyringWebCryptoInput = Partial<KmsKeyringInput<KMS>>
+export type KmsKeyringWebCryptoInput = Partial<KmsKeyringInput<KMSClient>>
 export type KMSWebCryptoConstructible = KMSConstructible<
-  KMS,
-  KMS.ClientConfiguration
+  KMSClient,
+  KMSClientConfig
 >
-export type KmsWebCryptoClientSupplier = KmsClientSupplier<KMS>
+export type KmsWebCryptoClientSupplier = KmsClientSupplier<KMSClient>
 
 export class KmsKeyringBrowser extends KmsKeyringClass<
   WebCryptoAlgorithmSuite,
-  KMS
+  KMSClient
 >(KeyringWebCrypto as Newable<KeyringWebCrypto>) {
   constructor({
     clientProvider = cacheKmsClients,
@@ -74,5 +74,5 @@ export {
   limitRegions,
   excludeRegions,
   cacheClients,
-  KMS,
+  KMSClient as KMS,
 }

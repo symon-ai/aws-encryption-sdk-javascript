@@ -17,21 +17,21 @@ import {
   Newable,
   NodeAlgorithmSuite,
 } from '@aws-crypto/material-management-node'
-import { KMS } from 'aws-sdk'
+import { KMSClient, KMSClientConfig } from '@aws-sdk/client-kms'
 import { version } from './version'
-const getKmsClient = getClient(KMS, {
+const getKmsClient = getClient(KMSClient, {
   customUserAgent: `AwsEncryptionSdkJavascriptNodejs/${version}`,
 })
 const cacheKmsClients = cacheClients(getKmsClient)
 
-export type KmsKeyringNodeInput = Partial<KmsKeyringInput<KMS>>
+export type KmsKeyringNodeInput = Partial<KmsKeyringInput<KMSClient>>
 export type KMSNodeConstructible = KMSConstructible<
-  KMS,
-  KMS.ClientConfiguration
+  KMSClient,
+  KMSClientConfig
 >
-export type KmsNodeClientSupplier = KmsClientSupplier<KMS>
+export type KmsNodeClientSupplier = KmsClientSupplier<KMSClient>
 
-export class KmsKeyringNode extends KmsKeyringClass<NodeAlgorithmSuite, KMS>(
+export class KmsKeyringNode extends KmsKeyringClass<NodeAlgorithmSuite, KMSClient>(
   KeyringNode as Newable<KeyringNode>
 ) {
   constructor({
@@ -53,5 +53,5 @@ export {
   limitRegions,
   excludeRegions,
   cacheClients,
-  KMS,
+  KMSClient as KMS
 }

@@ -16,16 +16,16 @@ import {
   KeyringWebCrypto,
   Newable,
 } from '@aws-crypto/material-management-browser'
-import { KMS } from 'aws-sdk'
+import { KMSClient } from '@aws-sdk/client-kms'
 
 export type AwsKmsMrkAwareSymmetricKeyringWebCryptoInput =
-  AwsKmsMrkAwareSymmetricKeyringInput<KMS>
+  AwsKmsMrkAwareSymmetricKeyringInput<KMSClient>
 
 export class AwsKmsMrkAwareSymmetricKeyringBrowser extends AwsKmsMrkAwareSymmetricKeyringClass<
   WebCryptoAlgorithmSuite,
-  KMS
+  KMSClient
 >(KeyringWebCrypto as Newable<KeyringWebCrypto>) {
-  declare client: KMS
+  declare client: KMSClient
   declare keyId: string
   declare grantTokens?: string[]
 

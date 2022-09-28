@@ -8,10 +8,10 @@ import {
 } from '@aws-crypto/material-management-browser'
 import { getKmsClient } from '.'
 import { AwsKmsMrkAwareSymmetricDiscoveryKeyringBrowser } from './kms_mrk_discovery_keyring_browser'
-import { KMS } from 'aws-sdk'
+import { KMSClient } from '@aws-sdk/client-kms'
 
 export const buildAwsKmsMrkAwareDiscoveryMultiKeyringBrowser =
-  getAwsKmsMrkAwareDiscoveryMultiKeyringBuilder<WebCryptoAlgorithmSuite, KMS>(
+  getAwsKmsMrkAwareDiscoveryMultiKeyringBuilder<WebCryptoAlgorithmSuite, KMSClient>(
     AwsKmsMrkAwareSymmetricDiscoveryKeyringBrowser,
     MultiKeyringWebCrypto,
     getKmsClient

@@ -17,7 +17,7 @@ import {
 } from '@aws-crypto/material-management-node'
 chai.use(chaiAsPromised)
 const { expect } = chai
-import { KMS } from 'aws-sdk'
+import { KMS } from '@aws-sdk/client-kms'
 
 describe('AwsKmsMrkAwareSymmetricKeyringNode::constructor', () => {
   it('constructor decorates', async () => {
@@ -83,7 +83,6 @@ describe('AwsKmsMrkAwareSymmetricDiscoveryKeyringNode encrypt/decrypt', () => {
         NumberOfBytes: suite.keyLengthBytes,
         EncryptionContext: encryptionContext,
       })
-      .promise()
     needs(Buffer.isBuffer(CiphertextBlob), 'never')
     const edk = new EncryptedDataKey({
       providerId: 'aws-kms',

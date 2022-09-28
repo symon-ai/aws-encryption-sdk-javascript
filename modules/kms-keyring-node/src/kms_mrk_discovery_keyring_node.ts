@@ -10,12 +10,12 @@ import {
   Newable,
   NodeAlgorithmSuite,
 } from '@aws-crypto/material-management-node'
-import { KMS } from 'aws-sdk'
+import { KMSClient } from '@aws-sdk/client-kms'
 
 export type AwsKmsMrkAwareSymmetricDiscoveryKeyringNodeInput =
-  AwsKmsMrkAwareSymmetricDiscoveryKeyringInput<KMS>
+  AwsKmsMrkAwareSymmetricDiscoveryKeyringInput<KMSClient>
 
 export const AwsKmsMrkAwareSymmetricDiscoveryKeyringNode =
-  AwsKmsMrkAwareSymmetricDiscoveryKeyringClass<NodeAlgorithmSuite, KMS>(
+  AwsKmsMrkAwareSymmetricDiscoveryKeyringClass<NodeAlgorithmSuite, KMSClient>(
     KeyringNode as Newable<KeyringNode>
   )

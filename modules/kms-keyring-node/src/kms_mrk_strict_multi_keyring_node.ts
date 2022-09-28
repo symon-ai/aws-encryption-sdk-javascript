@@ -9,17 +9,17 @@ import {
 } from '@aws-crypto/material-management'
 import { getKmsClient } from '.'
 import { AwsKmsMrkAwareSymmetricKeyringNode } from './kms_mrk_keyring_node'
-import { KMS } from 'aws-sdk'
+import { KMSClient } from '@aws-sdk/client-kms'
 
 export interface AwsKmsMrkAwareStrictMultiKeyringNodeInput {
-  clientProvider?: KmsClientSupplier<KMS>
+  clientProvider?: KmsClientSupplier<KMSClient>
   generatorKeyId?: string
   keyIds?: string[]
   grantTokens?: string[]
 }
 
 export const buildAwsKmsMrkAwareStrictMultiKeyringNode =
-  getAwsKmsMrkAwareStrictMultiKeyringBuilder<NodeAlgorithmSuite, KMS>(
+  getAwsKmsMrkAwareStrictMultiKeyringBuilder<NodeAlgorithmSuite, KMSClient>(
     AwsKmsMrkAwareSymmetricKeyringNode,
     MultiKeyringNode,
     getKmsClient

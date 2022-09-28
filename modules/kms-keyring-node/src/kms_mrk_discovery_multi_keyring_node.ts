@@ -11,11 +11,11 @@ import {
 } from '@aws-crypto/material-management'
 import { getKmsClient } from '.'
 import { AwsKmsMrkAwareSymmetricDiscoveryKeyringNode } from './kms_mrk_discovery_keyring_node'
-import { KMS } from 'aws-sdk'
+import { KMSClient } from '@aws-sdk/client-kms'
 
 export interface AwsKmsMrkAwareDiscoveryMultiKeyringNodeInput {
   regions: string[]
-  clientProvider?: KmsClientSupplier<KMS>
+  clientProvider?: KmsClientSupplier<KMSClient>
   discoveryFilter?: Readonly<{
     accountIDs: readonly string[]
     partition: string
@@ -24,7 +24,7 @@ export interface AwsKmsMrkAwareDiscoveryMultiKeyringNodeInput {
 }
 
 export const buildAwsKmsMrkAwareDiscoveryMultiKeyringNode =
-  getAwsKmsMrkAwareDiscoveryMultiKeyringBuilder<NodeAlgorithmSuite, KMS>(
+  getAwsKmsMrkAwareDiscoveryMultiKeyringBuilder<NodeAlgorithmSuite, KMSClient>(
     AwsKmsMrkAwareSymmetricDiscoveryKeyringNode,
     MultiKeyringNode,
     getKmsClient
