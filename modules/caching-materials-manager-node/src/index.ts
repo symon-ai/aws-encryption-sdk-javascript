@@ -2,4 +2,4 @@
 // SPDX-License-Identifier: Apache-2.0
 
 export * from './caching_materials_manager_node'
-export { getLocalCryptographicMaterialsCache } from '@aws-crypto/cache-material'
+export { getLocalCryptographicMaterialsCache } from '@symon-ai/aws-crypto-cache-material'

@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/material-management-browser",
+  "name": "@symon-ai/aws-crypto-material-management-browser",
   "version": "3.1.1",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -18,9 +18,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/material-management": "file:../material-management",
-    "@aws-crypto/serialize": "file:../serialize",
-    "@aws-crypto/web-crypto-backend": "file:../web-crypto-backend",
+    "@symon-ai/aws-crypto-material-management": "file:../material-management",
+    "@symon-ai/aws-crypto-serialize": "file:../serialize",
+    "@symon-ai/aws-crypto-web-crypto-backend": "file:../web-crypto-backend",
     "@aws-sdk/util-base64-browser": "3.1.0",
     "tslib": "^2.2.0"
   },

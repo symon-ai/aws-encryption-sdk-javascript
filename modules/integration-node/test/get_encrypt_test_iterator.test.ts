@@ -9,7 +9,7 @@ import {
   Client,
   EncryptManifestList,
   KeyList,
-} from '@aws-crypto/integration-vectors'
+} from '@symon-ai/aws-crypto-integration-vectors'
 
 const client: Client = {
   name: 'aws/aws-encryption-sdk-python',

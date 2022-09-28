@@ -11,7 +11,7 @@ import {
   getClient,
   buildClient,
   CommitmentPolicy,
-} from '@aws-crypto/client-browser'
+} from '@symon-ai/aws-crypto-client-browser'
 import { toBase64 } from '@aws-sdk/util-base64-browser'
 
 /* This is injected by webpack.

@@ -14,7 +14,7 @@ import {
   synchronousRandomValues,
   configureFallback,
   AlgorithmSuiteIdentifier,
-} from '@aws-crypto/client-browser'
+} from '@symon-ai/aws-crypto-client-browser'
 import { toBase64 } from '@aws-sdk/util-base64-browser'
 
 /* This builds the client with the FORBID_ENCRYPT_ALLOW_DECRYPT commitment policy.

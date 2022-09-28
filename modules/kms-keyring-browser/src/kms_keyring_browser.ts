@@ -10,7 +10,7 @@ import {
   limitRegions,
   excludeRegions,
   cacheClients,
-} from '@aws-crypto/kms-keyring'
+} from '@symon-ai/aws-crypto-kms-keyring'
 import {
   WebCryptoAlgorithmSuite,
   WebCryptoEncryptionMaterial,
@@ -21,7 +21,7 @@ import {
   importForWebCryptoDecryptionMaterial,
   KeyringWebCrypto,
   Newable,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import { KMSClient, KMSClientConfig } from '@aws-sdk/client-kms'
 import { version } from './version'
 const getKmsClient = getClient(KMSClient, {

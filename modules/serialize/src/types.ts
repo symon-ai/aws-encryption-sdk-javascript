@@ -5,7 +5,7 @@ import {
   MessageFormat,
   NonCommittingAlgorithmSuiteIdentifier,
   CommittingAlgorithmSuiteIdentifier,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import { ContentType, ObjectType } from './identifiers'
 import {
   IvLength,
@@ -13,7 +13,7 @@ import {
   AlgorithmSuite,
   EncryptedDataKey,
   EncryptionContext,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 export type BinaryData =
   | Int8Array

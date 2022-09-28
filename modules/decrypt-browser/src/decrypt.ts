@@ -12,7 +12,7 @@ import {
   CommitmentPolicy,
   CommitmentPolicySuites,
   ClientOptions,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import {
   deserializeSignature,
   MessageHeader,
@@ -23,7 +23,7 @@ import {
   der2raw,
   HeaderInfo,
   MessageHeaderV2,
-} from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-serialize'
 import { fromUtf8, toUtf8 } from '@aws-sdk/util-utf8-browser'
 
 const deserialize = deserializeFactory(toUtf8, WebCryptoAlgorithmSuite)

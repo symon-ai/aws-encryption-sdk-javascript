@@ -10,7 +10,7 @@
  * See: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/message-format.html#header-structure
  */
 
-import { AlgorithmSuite, needs } from '@aws-crypto/material-management'
+import { AlgorithmSuite, needs } from '@symon-ai/aws-crypto-material-management'
 import {
   HeaderInfo,
   AlgorithmSuiteConstructor,

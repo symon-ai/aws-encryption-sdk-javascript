@@ -20,10 +20,10 @@ import {
   KeyringTraceFlag,
   EncryptedDataKey,
   CommitmentPolicy,
-} from '@aws-crypto/material-management'
-import { ENCODED_SIGNER_KEY } from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-material-management'
+import { ENCODED_SIGNER_KEY } from '@symon-ai/aws-crypto-serialize'
 import { toBase64 } from '@aws-sdk/util-base64-browser'
-import { synchronousRandomValues } from '@aws-crypto/web-crypto-backend'
+import { synchronousRandomValues } from '@symon-ai/aws-crypto-web-crypto-backend'
 
 chai.use(chaiAsPromised)
 const { expect } = chai
@@ -274,7 +274,7 @@ describe('WebCryptoDefaultCryptographicMaterialsManager', () => {
       .and.to.equal('context')
   })
 
-  it('Precondition: WebCryptoDefaultCryptographicMaterialsManager must reserve the ENCODED_SIGNER_KEY constant from @aws-crypto/serialize.', async () => {
+  it('Precondition: WebCryptoDefaultCryptographicMaterialsManager must reserve the ENCODED_SIGNER_KEY constant from @symon-ai/aws-crypto-serialize.', async () => {
     const keyring = new TestKeyring()
     const cmm = new WebCryptoDefaultCryptographicMaterialsManager(keyring)
     const encryptionContext = {

@@ -12,7 +12,7 @@ import * as fixtures from './fixtures'
 import {
   EncryptedDataKey,
   WebCryptoAlgorithmSuite,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 const toUtf8 = (input: Uint8Array) => Buffer.from(input).toString()
 

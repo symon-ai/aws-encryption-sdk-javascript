@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/integration-node",
+  "name": "@symon-ai/aws-crypto-integration-node",
   "version": "3.1.1",
   "scripts": {
     "build": "tsc -b tsconfig.json",
@@ -16,8 +16,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/client-node": "file:../client-node",
-    "@aws-crypto/integration-vectors": "file:../integration-vectors",
+    "@symon-ai/aws-crypto-client-node": "file:../client-node",
+    "@symon-ai/aws-crypto-integration-vectors": "file:../integration-vectors",
     "@types/got": "^9.6.9",
     "@types/stream-to-promise": "^2.2.0",
     "@types/yargs": "^17.0.1",

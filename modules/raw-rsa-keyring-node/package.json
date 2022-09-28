@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/raw-rsa-keyring-node",
+  "name": "@symon-ai/aws-crypto-raw-rsa-keyring-node",
   "version": "3.1.0",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -18,8 +18,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/material-management-node": "file:../material-management-node",
-    "@aws-crypto/raw-keyring": "file:../raw-keyring",
+    "@symon-ai/aws-crypto-material-management-node": "file:../material-management-node",
+    "@symon-ai/aws-crypto-raw-keyring": "file:../raw-keyring",
     "tslib": "^2.2.0"
   },
   "sideEffects": false,

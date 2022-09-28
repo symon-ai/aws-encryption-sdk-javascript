@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import yargs from 'yargs'
-import { needs } from '@aws-crypto/client-node'
+import { needs } from '@symon-ai/aws-crypto-client-node'
 import { cpus } from 'os'
 import {
   integrationDecryptTestVectors,

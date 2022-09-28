@@ -1,7 +1,7 @@
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import { EncryptionContext } from '@aws-crypto/material-management'
+import { EncryptionContext } from '@symon-ai/aws-crypto-material-management'
 import { Readable } from 'stream'
 import { Entry } from 'yauzl'
 

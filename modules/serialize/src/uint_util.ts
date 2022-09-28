@@ -1,7 +1,7 @@
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import { needs } from '@aws-crypto/material-management'
+import { needs } from '@symon-ai/aws-crypto-material-management'
 
 const UINT8_OVERFLOW = 2 ** 8
 export function uInt8(number: number) {

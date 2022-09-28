@@ -5,7 +5,7 @@
 import yargs from 'yargs'
 import { spawnSync } from 'child_process'
 import { cpus } from 'os'
-import { needs } from '@aws-crypto/client-browser'
+import { needs } from '@symon-ai/aws-crypto-client-browser'
 
 import { join } from 'path'
 import { existsSync, mkdirSync, writeFileSync } from 'fs'

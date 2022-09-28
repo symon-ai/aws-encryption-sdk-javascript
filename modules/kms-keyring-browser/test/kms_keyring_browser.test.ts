@@ -13,7 +13,7 @@ import {
   AlgorithmSuiteIdentifier,
   EncryptedDataKey,
   WebCryptoDecryptionMaterial,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 
 chai.use(chaiAsPromised)
 const { expect } = chai

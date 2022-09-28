@@ -4,7 +4,7 @@
 import {
   MixedBackendCryptoKey,
   AwsEsdkJsCryptoKey,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 
 export enum RsaPadding {
   OAEP_SHA1_MFG1 = 'OAEP_SHA1_MFG1',

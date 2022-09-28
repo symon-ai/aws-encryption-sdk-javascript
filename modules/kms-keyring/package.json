@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/kms-keyring",
+  "name": "@symon-ai/aws-crypto-kms-keyring",
   "version": "3.1.0",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -18,7 +18,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/material-management": "file:../material-management",
+    "@symon-ai/aws-crypto-material-management": "file:../material-management",
     "@aws-sdk/client-kms": "^3.38.0",
     "tslib": "^2.2.0"
   },

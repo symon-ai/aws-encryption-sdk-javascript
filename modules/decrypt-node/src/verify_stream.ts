@@ -8,14 +8,14 @@ import {
   needs,
   GetVerify,
   GetDecipher,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import {
   deserializeSignature,
   decodeBodyHeader,
   BodyHeader,
   HeaderInfo,
   serializeMessageHeaderAuth,
-} from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-serialize'
 import { ParseHeaderStream } from './parse_header_stream'
 import { DecipherInfo } from './decipher_stream'
 

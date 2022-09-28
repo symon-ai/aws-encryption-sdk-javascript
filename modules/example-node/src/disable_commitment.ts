@@ -5,7 +5,7 @@ import {
   KmsKeyringNode,
   buildClient,
   CommitmentPolicy,
-} from '@aws-crypto/client-node'
+} from '@symon-ai/aws-crypto-client-node'
 /* This builds the client with the FORBID_ENCRYPT_ALLOW_DECRYPT commitment policy.
  * This configuration should only be used
  * as part of a migration

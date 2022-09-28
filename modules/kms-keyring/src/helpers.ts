@@ -16,7 +16,7 @@ import {
   EncryptionContext,
   EncryptedDataKey,
   needs,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import { DecryptCommand, EncryptCommand, GenerateDataKeyCommand } from '@aws-sdk/client-kms'
 
 export const KMS_PROVIDER_ID = 'aws-kms'

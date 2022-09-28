@@ -5,13 +5,13 @@ import {
   KeyringNode,
   NodeMaterialsManager,
   ClientOptions,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { _encryptStream, EncryptStreamInput } from './encrypt_stream'
 
 // @ts-ignore
 import { finished } from 'readable-stream'
 import { Readable, Duplex } from 'stream'
-import { MessageHeader } from '@aws-crypto/serialize'
+import { MessageHeader } from '@symon-ai/aws-crypto-serialize'
 
 export interface EncryptInput extends EncryptStreamInput {
   encoding?: BufferEncoding

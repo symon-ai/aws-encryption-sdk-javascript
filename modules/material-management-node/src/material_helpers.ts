@@ -9,7 +9,7 @@ import {
   wrapWithKeyObjectIfSupported,
   AwsEsdkKeyObject,
   NodeHash,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import {
   createCipheriv,
   createDecipheriv,
@@ -17,8 +17,8 @@ import {
   createVerify,
   timingSafeEqual,
 } from 'crypto'
-import { HKDF } from '@aws-crypto/hkdf-node'
-import { kdfInfo, kdfCommitKeyInfo } from '@aws-crypto/serialize'
+import { HKDF } from '@symon-ai/aws-crypto-hkdf-node'
+import { kdfInfo, kdfCommitKeyInfo } from '@symon-ai/aws-crypto-serialize'
 import { AwsESDKSigner, AwsESDKVerify } from './types'
 
 export interface AwsEsdkJsCipherGCM {

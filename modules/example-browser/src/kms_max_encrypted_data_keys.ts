@@ -7,7 +7,7 @@ import {
   getClient,
   buildClient,
   CommitmentPolicy,
-} from '@aws-crypto/client-browser'
+} from '@symon-ai/aws-crypto-client-browser'
 
 /* A KMS CMK is required to generate the data key.
  * You need kms:GenerateDataKey permission on the CMK in generatorKeyId.

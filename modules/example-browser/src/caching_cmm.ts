@@ -13,7 +13,7 @@ import {
   CommitmentPolicy,
   WebCryptoCachingMaterialsManager,
   getLocalCryptographicMaterialsCache,
-} from '@aws-crypto/client-browser'
+} from '@symon-ai/aws-crypto-client-browser'
 import { toBase64 } from '@aws-sdk/util-base64-browser'
 
 /* This builds the client with the REQUIRE_ENCRYPT_REQUIRE_DECRYPT commitment policy,

@@ -9,7 +9,7 @@ import {
   WebCryptoRawAesMaterial,
 } from '../src/raw_aes_material'
 import { RawAesWrappingSuiteIdentifier } from '../src/raw_aes_algorithm_suite'
-import { AlgorithmSuiteIdentifier } from '@aws-crypto/material-management'
+import { AlgorithmSuiteIdentifier } from '@symon-ai/aws-crypto-material-management'
 
 describe('NodeRawAesMaterial', () => {
   const suiteId = RawAesWrappingSuiteIdentifier.AES128_GCM_IV12_TAG16_NO_PADDING

@@ -10,7 +10,7 @@ import {
   NodeEncryptionMaterial,
   NodeDecryptionMaterial,
   AlgorithmSuiteIdentifier,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 const nodeSuite = new NodeAlgorithmSuite(
   AlgorithmSuiteIdentifier.ALG_AES128_GCM_IV12_TAG16_HKDF_SHA256

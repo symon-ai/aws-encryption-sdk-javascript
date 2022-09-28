@@ -10,7 +10,7 @@ import {
   buildCryptographicMaterialsCacheKeyHelpers,
   CryptographicMaterialsCache,
   CachingMaterialsManagerInput,
-} from '@aws-crypto/cache-material'
+} from '@symon-ai/aws-crypto-cache-material'
 import {
   NodeMaterialsManager,
   NodeDefaultCryptographicMaterialsManager,
@@ -18,7 +18,7 @@ import {
   KeyringNode,
   NodeGetEncryptionMaterials,
   NodeGetDecryptMaterials,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { sha512 } from './sha512'
 import { randomBytes } from 'crypto'
 

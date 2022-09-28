@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/cache-material",
+  "name": "@symon-ai/aws-crypto-cache-material",
   "version": "3.1.0",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -18,8 +18,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/material-management": "file:../material-management",
-    "@aws-crypto/serialize": "file:../serialize",
+    "@symon-ai/aws-crypto-material-management": "file:../material-management",
+    "@symon-ai/aws-crypto-serialize": "file:../serialize",
     "@types/lru-cache": "^5.1.0",
     "lru-cache": "^6.0.0",
     "tslib": "^2.2.0"

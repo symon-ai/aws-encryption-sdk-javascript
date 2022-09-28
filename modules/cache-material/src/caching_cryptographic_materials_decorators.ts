@@ -14,8 +14,8 @@ import {
   readOnlyProperty,
   Keyring,
   cloneMaterial,
-} from '@aws-crypto/material-management'
-import { Maximum } from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-material-management'
+import { Maximum } from '@symon-ai/aws-crypto-serialize'
 import {
   CryptographicMaterialsCache,
   Entry,

@@ -14,7 +14,7 @@ import {
   unwrapDataKey,
   AwsEsdkKeyObject,
   NodeAlgorithmSuite,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 import {
   constants,
@@ -30,7 +30,7 @@ import {
   _onDecrypt,
   WrapKey,
   UnwrapKey,
-} from '@aws-crypto/raw-keyring'
+} from '@symon-ai/aws-crypto-raw-keyring'
 
 import { oaepHashSupported } from './oaep_hash_supported'
 

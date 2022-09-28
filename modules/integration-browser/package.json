@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/integration-browser",
+  "name": "@symon-ai/aws-crypto-integration-browser",
   "version": "3.1.1",
   "scripts": {
     "build": "tsc -b tsconfig.json",
@@ -17,8 +17,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/client-browser": "file:../client-browser",
-    "@aws-crypto/integration-vectors": "file:../integration-vectors",
+    "@symon-ai/aws-crypto-client-browser": "file:../client-browser",
+    "@symon-ai/aws-crypto-integration-vectors": "file:../integration-vectors",
     "@aws-sdk/credential-provider-node": "^3.11.0",
     "@aws-sdk/karma-credential-loader": "3.38.0",
     "@aws-sdk/util-base64-browser": "^3.10.0",

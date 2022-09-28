@@ -17,7 +17,7 @@ import {
   needs,
   CommittingAlgorithmSuiteIdentifier,
   MessageFormat,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import { MessageIdLength } from './identifiers'
 import {
   HeaderInfo,

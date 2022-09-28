@@ -3,8 +3,8 @@
 
 /* eslint-env jasmine */
 
-import { DecryptionFixture } from '@aws-crypto/integration-vectors'
-import { buildClient, CommitmentPolicy } from '@aws-crypto/client-browser'
+import { DecryptionFixture } from '@symon-ai/aws-crypto-integration-vectors'
+import { buildClient, CommitmentPolicy } from '@symon-ai/aws-crypto-client-browser'
 import { decryptionIntegrationBrowserTest } from './testDecryptFixture'
 
 const { decrypt } = buildClient(CommitmentPolicy.FORBID_ENCRYPT_ALLOW_DECRYPT)

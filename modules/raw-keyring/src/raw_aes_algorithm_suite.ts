@@ -1,7 +1,7 @@
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import { AlgorithmSuiteIdentifier } from '@aws-crypto/material-management'
+import { AlgorithmSuiteIdentifier } from '@symon-ai/aws-crypto-material-management'
 
 export type WrappingSuiteIdentifier =
   | AlgorithmSuiteIdentifier.ALG_AES128_GCM_IV12_TAG16

@@ -4,7 +4,7 @@
 import {
   AwsKmsMrkAwareSymmetricKeyringClass,
   AwsKmsMrkAwareSymmetricKeyringInput,
-} from '@aws-crypto/kms-keyring'
+} from '@symon-ai/aws-crypto-kms-keyring'
 import {
   WebCryptoAlgorithmSuite,
   WebCryptoEncryptionMaterial,
@@ -15,7 +15,7 @@ import {
   importForWebCryptoDecryptionMaterial,
   KeyringWebCrypto,
   Newable,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import { KMSClient } from '@aws-sdk/client-kms'
 
 export type AwsKmsMrkAwareSymmetricKeyringWebCryptoInput =

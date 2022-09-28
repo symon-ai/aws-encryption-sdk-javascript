@@ -5,13 +5,13 @@
 
 import { expect } from 'chai'
 import { NodeCachingMaterialsManager } from '../src/index'
-import {} from '@aws-crypto/cache-material'
+import {} from '@symon-ai/aws-crypto-cache-material'
 import {
   KeyringNode,
   NodeEncryptionMaterial,
   NodeDecryptionMaterial,
   NodeDefaultCryptographicMaterialsManager,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 describe('NodeCachingMaterialsManager', () => {
   it('constructor will decorate', () => {

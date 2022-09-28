@@ -8,8 +8,8 @@ import {
   needs,
   GetDecipher,
   AwsEsdkJsDecipherGCM,
-} from '@aws-crypto/material-management-node'
-import { aadFactory, ContentType } from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-material-management-node'
+import { aadFactory, ContentType } from '@symon-ai/aws-crypto-serialize'
 import { VerifyStream } from './verify_stream'
 
 const fromUtf8 = (input: string) => Buffer.from(input, 'utf8')

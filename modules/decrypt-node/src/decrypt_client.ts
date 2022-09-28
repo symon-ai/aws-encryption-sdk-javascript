@@ -8,7 +8,7 @@ import {
   needs,
   SignaturePolicy,
   ClientOptions,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 type CurryFirst<fn extends (...a: any[]) => any> = fn extends (
   _: any,

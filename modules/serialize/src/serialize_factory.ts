@@ -18,7 +18,7 @@ import {
   EncryptedDataKey,
   MessageFormat,
   AlgorithmSuite,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import {
   ContentType,
   ObjectType,

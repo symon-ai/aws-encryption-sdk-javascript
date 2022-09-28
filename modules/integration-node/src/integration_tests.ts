@@ -6,7 +6,7 @@ import {
   TestVectorResult,
   parseIntegrationTestVectorsToTestVectorIterator,
   PositiveTestVectorInfo,
-} from '@aws-crypto/integration-vectors'
+} from '@symon-ai/aws-crypto-integration-vectors'
 import {
   EncryptTestVectorInfo,
   getEncryptTestVectorIterator,
@@ -21,7 +21,7 @@ import {
   MessageHeader,
   needs,
   DecryptOutput,
-} from '@aws-crypto/client-node'
+} from '@symon-ai/aws-crypto-client-node'
 import { URL } from 'url'
 import got from 'got'
 import streamToPromise from 'stream-to-promise'

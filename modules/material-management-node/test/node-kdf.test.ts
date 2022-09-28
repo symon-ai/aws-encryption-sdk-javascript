@@ -12,10 +12,10 @@ import {
   unwrapDataKey,
   NodeEncryptionMaterial,
   needs,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import { nodeKdf, curryCryptoStream } from '../src/material_helpers'
 import { randomBytes, createCipheriv, createDecipheriv } from 'crypto'
-import { MessageIdLength } from '@aws-crypto/serialize'
+import { MessageIdLength } from '@symon-ai/aws-crypto-serialize'
 
 describe('nodeKdf v2 commitment', () => {
   it('basic test vectors', () => {

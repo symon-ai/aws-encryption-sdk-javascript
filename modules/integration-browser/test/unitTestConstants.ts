@@ -7,8 +7,8 @@ import {
   KeyInfoTuple,
   KMSKey,
   KmsKeyInfo,
-} from '@aws-crypto/integration-vectors'
-import { MaterialsManager } from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-integration-vectors'
+import { MaterialsManager } from '@symon-ai/aws-crypto-material-management'
 
 export interface MockedCmm extends MaterialsManager<any> {
   err?: string

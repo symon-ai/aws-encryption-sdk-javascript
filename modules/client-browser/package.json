@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/client-browser",
+  "name": "@symon-ai/aws-crypto-client-browser",
   "keywords": [
     "cryptography",
     "crypto",
@@ -23,14 +23,14 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/caching-materials-manager-browser": "file:../caching-materials-manager-browser",
-    "@aws-crypto/decrypt-browser": "file:../decrypt-browser",
-    "@aws-crypto/encrypt-browser": "file:../encrypt-browser",
-    "@aws-crypto/kms-keyring-browser": "file:../kms-keyring-browser",
-    "@aws-crypto/material-management-browser": "file:../material-management-browser",
-    "@aws-crypto/raw-aes-keyring-browser": "file:../raw-aes-keyring-browser",
-    "@aws-crypto/raw-rsa-keyring-browser": "file:../raw-rsa-keyring-browser",
-    "@aws-crypto/web-crypto-backend": "file:../web-crypto-backend",
+    "@symon-ai/aws-crypto-caching-materials-manager-browser": "file:../caching-materials-manager-browser",
+    "@symon-ai/aws-crypto-decrypt-browser": "file:../decrypt-browser",
+    "@symon-ai/aws-crypto-encrypt-browser": "file:../encrypt-browser",
+    "@symon-ai/aws-crypto-kms-keyring-browser": "file:../kms-keyring-browser",
+    "@symon-ai/aws-crypto-material-management-browser": "file:../material-management-browser",
+    "@symon-ai/aws-crypto-raw-aes-keyring-browser": "file:../raw-aes-keyring-browser",
+    "@symon-ai/aws-crypto-raw-rsa-keyring-browser": "file:../raw-rsa-keyring-browser",
+    "@symon-ai/aws-crypto-web-crypto-backend": "file:../web-crypto-backend",
     "tslib": "^2.2.0"
   },
   "sideEffects": false,

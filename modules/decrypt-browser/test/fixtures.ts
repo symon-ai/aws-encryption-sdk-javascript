@@ -9,7 +9,7 @@ import {
   KeyringWebCrypto,
   KeyringTraceFlag,
   importForWebCryptoDecryptionMaterial,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 
 export function ciphertextAlgAes256GcmIv12Tag16HkdfSha384EcdsaP384() {
   // prettier-ignore

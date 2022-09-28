@@ -12,7 +12,7 @@ import {
   AesKeyInfo,
   RSAKey,
   RsaKeyInfo,
-} from '@aws-crypto/integration-vectors'
+} from '@symon-ai/aws-crypto-integration-vectors'
 
 const kmsKey: KMSKey = {
   encrypt: true,

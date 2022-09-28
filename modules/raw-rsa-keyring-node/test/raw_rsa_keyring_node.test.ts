@@ -14,7 +14,7 @@ import {
   EncryptedDataKey,
   NodeDecryptionMaterial,
   unwrapDataKey,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { oaepHashSupported } from '../src/oaep_hash_supported'
 
 chai.use(chaiAsPromised)

@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/decrypt-browser",
+  "name": "@symon-ai/aws-crypto-decrypt-browser",
   "version": "3.1.1",
   "scripts": {
     "prepublishOnly": "tsc -p tsconfig.json && tsc -p tsconfig.module.json",
@@ -17,8 +17,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/material-management-browser": "file:../material-management-browser",
-    "@aws-crypto/serialize": "file:../serialize",
+    "@symon-ai/aws-crypto-material-management-browser": "file:../material-management-browser",
+    "@symon-ai/aws-crypto-serialize": "file:../serialize",
     "@aws-sdk/util-utf8-browser": "3.23.0",
     "tslib": "^2.2.0"
   },

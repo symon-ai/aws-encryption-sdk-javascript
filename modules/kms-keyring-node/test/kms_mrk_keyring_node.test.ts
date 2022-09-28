@@ -15,7 +15,7 @@ import {
   NodeDecryptionMaterial,
   unwrapDataKey,
   KeyringTraceFlag,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { KMSClient } from '@aws-sdk/client-kms'
 
 chai.use(chaiAsPromised)

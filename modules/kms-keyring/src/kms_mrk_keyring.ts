@@ -16,7 +16,7 @@ import {
   unwrapDataKey,
   Newable,
   Catchable,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import {
   KMS_PROVIDER_ID,
   generateDataKey,

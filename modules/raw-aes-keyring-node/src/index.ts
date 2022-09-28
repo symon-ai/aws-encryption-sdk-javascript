@@ -4,5 +4,5 @@
 export {
   RawAesWrappingSuiteIdentifier,
   WrappingSuiteIdentifier,
-} from '@aws-crypto/raw-keyring'
+} from '@symon-ai/aws-crypto-raw-keyring'
 export * from './raw_aes_keyring_node'

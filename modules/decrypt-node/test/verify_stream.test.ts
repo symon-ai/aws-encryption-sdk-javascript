@@ -13,7 +13,7 @@ import { ParseHeaderStream } from '../src/parse_header_stream'
 import * as fixtures from './fixtures'
 // @ts-ignore
 import from from 'from2'
-import { ContentType } from '@aws-crypto/serialize'
+import { ContentType } from '@symon-ai/aws-crypto-serialize'
 import {
   AlgorithmSuiteIdentifier,
   needs,
@@ -22,7 +22,7 @@ import {
   SignaturePolicy,
   CommitmentPolicy,
   ClientOptions,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 const pipeline = util.promisify(stream.pipeline)
 chai.use(chaiAsPromised)

@@ -14,7 +14,7 @@
  * https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/message-format.html#header-data-keys
  */
 
-import { needs } from '@aws-crypto/material-management'
+import { needs } from '@symon-ai/aws-crypto-material-management'
 /**
  *
  * The encryption SDK stores elements in the form of length data.

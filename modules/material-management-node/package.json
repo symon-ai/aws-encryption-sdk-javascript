@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/material-management-node",
+  "name": "@symon-ai/aws-crypto-material-management-node",
   "version": "3.1.0",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -18,9 +18,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/hkdf-node": "file:../hkdf-node",
-    "@aws-crypto/material-management": "file:../material-management",
-    "@aws-crypto/serialize": "file:../serialize",
+    "@symon-ai/aws-crypto-hkdf-node": "file:../hkdf-node",
+    "@symon-ai/aws-crypto-material-management": "file:../material-management",
+    "@symon-ai/aws-crypto-serialize": "file:../serialize",
     "tslib": "^2.2.0"
   },
   "sideEffects": false,

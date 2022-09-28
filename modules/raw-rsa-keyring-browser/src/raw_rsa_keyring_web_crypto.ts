@@ -18,19 +18,19 @@ import {
   MixedBackendCryptoKey,
   WebCryptoAlgorithmSuite,
   AwsEsdkJsCryptoKey,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 
 import {
   getWebCryptoBackend,
   getNonZeroByteBackend,
   isFullSupportWebCryptoBackend,
-} from '@aws-crypto/web-crypto-backend'
+} from '@symon-ai/aws-crypto-web-crypto-backend'
 import {
   _onEncrypt,
   _onDecrypt,
   WrapKey,
   UnwrapKey,
-} from '@aws-crypto/raw-keyring'
+} from '@symon-ai/aws-crypto-raw-keyring'
 import { randomValuesOnly } from '@aws-crypto/random-source-browser'
 import { RawRsaKeyringWebCryptoInput, RsaImportableKey } from './types'
 import {

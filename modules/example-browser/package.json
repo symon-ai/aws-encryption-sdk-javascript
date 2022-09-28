@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/example-browser",
+  "name": "@symon-ai/aws-crypto-example-browser",
   "version": "3.1.1",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -25,7 +25,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/client-browser": "file:../client-browser",
+    "@symon-ai/aws-crypto-client-browser": "file:../client-browser",
     "@aws-sdk/util-base64-browser": "3.1.0",
     "@types/chai": "^4.2.11",
     "chai": "^4.2.0",

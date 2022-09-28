@@ -9,7 +9,7 @@ import {
   NodeAlgorithmSuite,
   Keyring,
   Newable,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 describe('AwsKmsMrkAwareSymmetricDiscoveryKeyring: constructor', () => {
   it('set properties', () => {

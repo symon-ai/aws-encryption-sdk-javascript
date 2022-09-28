@@ -18,7 +18,7 @@ import {
   SignaturePolicy,
   CommitmentPolicy,
   ClientOptions,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import * as fixtures from './fixtures'
 
 const pipeline = util.promisify(stream.pipeline)

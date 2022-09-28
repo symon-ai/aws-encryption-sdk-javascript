@@ -39,4 +39,4 @@ export {
   MessageFormat,
   ClientOptions,
   Newable,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
