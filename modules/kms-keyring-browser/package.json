@@ -19,7 +19,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-sdk/client-kms": "^3.38.0",
+    "@aws-sdk/client-kms": "~3.46.0",
     "@symon-ai/aws-crypto-kms-keyring": "file:../kms-keyring",
     "@symon-ai/aws-crypto-material-management-browser": "file:../material-management-browser",
     "@symon-ai/aws-crypto-web-crypto-backend": "file:../web-crypto-backend",
