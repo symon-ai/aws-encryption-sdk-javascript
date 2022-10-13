@@ -33,5 +33,13 @@
     "email": "aws-cryptools@amazon.com",
     "url": "https://aws.amazon.com/javascript/"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+		"directory": "modules/integration-vectors"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }

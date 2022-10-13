@@ -32,5 +32,13 @@
   "bin": "./build/main/src/cli.js",
   "files": [
     "build/**/src/*"
-  ]
+  ],
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+		"directory": "modules/integration-node"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }

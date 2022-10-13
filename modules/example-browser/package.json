@@ -44,5 +44,13 @@
   },
   "main": "./build/main/src/index.js",
   "module": "./build/module/src/index.js",
-  "types": "./build/main/index.d.ts"
+  "types": "./build/main/index.d.ts",
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+		"directory": "modules/example-browser"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }

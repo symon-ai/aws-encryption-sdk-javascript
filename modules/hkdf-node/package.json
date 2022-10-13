@@ -12,7 +12,6 @@
     "test": "npm run lint && npm run coverage",
     "coverage": "nyc -e .ts npm run mocha"
   },
-  "repository": "",
   "author": {
     "name": "AWS Crypto Tools Team",
     "email": "aws-cryptools@amazon.com",
@@ -35,5 +34,13 @@
     "plugins": [
       "@typescript-eslint"
     ]
-  }
+  },
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+		"directory": "modules/hkdf-node"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
