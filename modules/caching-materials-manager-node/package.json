@@ -1,6 +1,6 @@
 {
   "name": "@symon-ai/aws-crypto-caching-materials-manager-node",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsc -b tsconfig.json && tsc -b tsconfig.module.json",
@@ -30,11 +30,11 @@
     "build/**/src/*"
   ],
   "repository": {
-		"type": "git",
-		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
-		"directory": "modules/caching-materials-manager-node"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	}
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/caching-materials-manager-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
