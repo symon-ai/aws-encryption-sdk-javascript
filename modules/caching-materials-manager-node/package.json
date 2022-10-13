@@ -28,5 +28,13 @@
   "types": "./build/main/src/index.d.ts",
   "files": [
     "build/**/src/*"
-  ]
+  ],
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+		"directory": "modules/caching-materials-manager-node"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }

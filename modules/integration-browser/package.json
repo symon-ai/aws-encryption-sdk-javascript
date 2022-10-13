@@ -50,5 +50,13 @@
   "files": [
     "build/**/src/*",
     "karma.conf.js"
-  ]
+  ],
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+		"directory": "modules/integration-browser"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
