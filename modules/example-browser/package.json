@@ -1,6 +1,6 @@
 {
   "name": "@symon-ai/aws-crypto-example-browser",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsc -b tsconfig.json && tsc -b tsconfig.module.json",
@@ -46,11 +46,11 @@
   "module": "./build/module/src/index.js",
   "types": "./build/main/index.d.ts",
   "repository": {
-		"type": "git",
-		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
-		"directory": "modules/example-browser"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	}
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/example-browser"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

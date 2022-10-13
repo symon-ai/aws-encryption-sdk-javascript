@@ -1,6 +1,6 @@
 {
   "name": "@symon-ai/aws-crypto-hkdf-node",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "nodejs hkdf crypto primitive",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -36,11 +36,11 @@
     ]
   },
   "repository": {
-		"type": "git",
-		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
-		"directory": "modules/hkdf-node"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	}
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/hkdf-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

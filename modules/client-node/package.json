@@ -9,7 +9,7 @@
     "CSE",
     "aws"
   ],
-  "version": "4.0.1",
+  "version": "4.0.2",
   "scripts": {
     "build": "tsc -b tsconfig.json",
     "lint": "run-s lint-*",
@@ -39,11 +39,11 @@
     "build/**/src/*"
   ],
   "repository": {
-		"type": "git",
-		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
-		"directory": "modules/client-node"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	}
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/client-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

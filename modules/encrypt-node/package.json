@@ -1,6 +1,6 @@
 {
   "name": "@symon-ai/aws-crypto-encrypt-node",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "scripts": {
     "prepublishOnly": "tsc -p tsconfig.json && tsc -p tsconfig.module.json",
     "lint": "run-s lint-*",
@@ -32,11 +32,11 @@
     "build/**/src/*"
   ],
   "repository": {
-		"type": "git",
-		"url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
-		"directory": "modules/encrypt-node"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	}
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/encrypt-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
