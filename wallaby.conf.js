@@ -41,7 +41,7 @@ module.exports = function (wallaby) {
         const modulePrototype = Module.prototype
         Module._originalRequire = modulePrototype.require
         modulePrototype.require = function (filePath) {
-          if (!filePath.startsWith('@symon-ai')) {
+          if (!filePath.startsWith('@symon-ai/aws-crypto-')) {
             return Module._originalRequire.call(this, filePath)
           }
           const [, _module] = filePath.split('/')
