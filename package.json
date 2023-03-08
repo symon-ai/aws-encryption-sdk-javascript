@@ -58,8 +58,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:awslabs/aws-encryption-sdk-javascript.git"
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git"
   },
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
   "author": "aws-crypto-tools-team@amazon.com",
   "license": "Apache-2.0",
   "dependencies": {
