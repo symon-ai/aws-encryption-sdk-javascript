@@ -6,13 +6,13 @@
 import { expect } from 'chai'
 // import 'mocha'
 import { WebCryptoCachingMaterialsManager } from '../src/index'
-import {} from '@aws-crypto/cache-material'
+import {} from '@symon-ai/aws-crypto-cache-material'
 import {
   KeyringWebCrypto,
   WebCryptoDefaultCryptographicMaterialsManager,
   WebCryptoEncryptionMaterial,
   WebCryptoDecryptionMaterial,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 
 describe('WebCryptoCachingMaterialsManager', () => {
   it('constructor will decorate', () => {

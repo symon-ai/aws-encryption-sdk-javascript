@@ -15,7 +15,7 @@ import {
   EncryptedDataKey,
   NodeDecryptionMaterial,
   unwrapDataKey,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 describe('KmsKeyringNode::constructor', () => {
   it('constructor decorates', async () => {

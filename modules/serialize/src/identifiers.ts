@@ -18,8 +18,8 @@
  */
 
 export const ENCODED_SIGNER_KEY = 'aws-crypto-public-key'
-/** @deprecated use import { MessageFormat } from '@aws-crypto/material-management' */
-export { MessageFormat as SerializationVersion } from '@aws-crypto/material-management'
+/** @deprecated use import { MessageFormat } from '@symon-ai/aws-crypto-material-management' */
+export { MessageFormat as SerializationVersion } from '@symon-ai/aws-crypto-material-management'
 
 export enum ContentType {
   NO_FRAMING = 1,

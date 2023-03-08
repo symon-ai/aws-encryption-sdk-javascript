@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/example-node",
+  "name": "@symon-ai/aws-crypto-example-node",
   "version": "3.2.0",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -18,7 +18,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/client-node": "file:../client-node",
+    "@symon-ai/aws-crypto-client-node": "file:../client-node",
     "tslib": "^2.2.0"
   },
   "sideEffects": false,

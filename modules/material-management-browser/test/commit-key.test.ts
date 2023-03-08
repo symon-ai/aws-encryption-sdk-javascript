@@ -24,13 +24,13 @@ import {
   KeyringTraceFlag,
   isValidCryptoKey,
   needs,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import {
   synchronousRandomValues,
   getWebCryptoBackend,
   getZeroByteSubtle,
-} from '@aws-crypto/web-crypto-backend'
-import { MessageIdLength } from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-web-crypto-backend'
+import { MessageIdLength } from '@symon-ai/aws-crypto-serialize'
 
 chai.use(chaiAsPromised)
 const { expect } = chai

@@ -15,7 +15,7 @@ import {
   needs,
   isCryptoKey,
   AwsEsdkJsCryptoKey,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 
 type WebCryptoRsaName = keyof typeof JsonWebKeyRsaAlg
 const OAEP_SHA1_MFG1: RsaWrappingKeyAlgorithm = {

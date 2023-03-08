@@ -1,7 +1,7 @@
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import { needs } from '@aws-crypto/material-management'
+import { needs } from '@symon-ai/aws-crypto-material-management'
 
 /* See: https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-kms
  * regex to match: 'resourceType/resourceId' || 'resourceType'

@@ -20,13 +20,13 @@ import {
   AwsEsdkJsKeyUsage,
   AwsEsdkJsCryptoKeyPair,
   CommitmentPolicySuites,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
-import { ENCODED_SIGNER_KEY } from '@aws-crypto/serialize'
+import { ENCODED_SIGNER_KEY } from '@symon-ai/aws-crypto-serialize'
 import {
   getWebCryptoBackend,
   getNonZeroByteBackend,
-} from '@aws-crypto/web-crypto-backend'
+} from '@symon-ai/aws-crypto-web-crypto-backend'
 import { fromBase64, toBase64 } from '@aws-sdk/util-base64-browser'
 
 export type WebCryptoEncryptionRequest =
@@ -63,7 +63,7 @@ export class WebCryptoDefaultCryptographicMaterialsManager
         CommitmentPolicySuites[commitmentPolicy].defaultAlgorithmSuite
       )
 
-    /* Precondition: WebCryptoDefaultCryptographicMaterialsManager must reserve the ENCODED_SIGNER_KEY constant from @aws-crypto/serialize.
+    /* Precondition: WebCryptoDefaultCryptographicMaterialsManager must reserve the ENCODED_SIGNER_KEY constant from @symon-ai/aws-crypto-serialize.
      * A CryptographicMaterialsManager can change entries to the encryptionContext
      * but changing these values has consequences.
      * The DefaultCryptographicMaterialsManager uses the value in the encryption context to store public signing key.

@@ -11,13 +11,13 @@ import {
   excludeRegions,
   cacheClients,
   AwsEsdkKMSInterface,
-} from '@aws-crypto/kms-keyring'
+} from '@symon-ai/aws-crypto-kms-keyring'
 import {
   immutableClass,
   KeyringNode,
   Newable,
   NodeAlgorithmSuite,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { KMSClient, KMSClientConfig } from '@aws-sdk/client-kms'
 import { version } from './version'
 const getKmsClient = getClient(KMSClient, {

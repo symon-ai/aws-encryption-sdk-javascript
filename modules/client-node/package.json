@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/client-node",
+  "name": "@symon-ai/aws-crypto-client-node",
   "keywords": [
     "cryptography",
     "crypto",
@@ -23,13 +23,13 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/caching-materials-manager-node": "file:../caching-materials-manager-node",
-    "@aws-crypto/decrypt-node": "file:../decrypt-node",
-    "@aws-crypto/encrypt-node": "file:../encrypt-node",
-    "@aws-crypto/kms-keyring-node": "file:../kms-keyring-node",
-    "@aws-crypto/material-management-node": "file:../material-management-node",
-    "@aws-crypto/raw-aes-keyring-node": "file:../raw-aes-keyring-node",
-    "@aws-crypto/raw-rsa-keyring-node": "file:../raw-rsa-keyring-node",
+    "@symon-ai/aws-crypto-caching-materials-manager-node": "file:../caching-materials-manager-node",
+    "@symon-ai/aws-crypto-decrypt-node": "file:../decrypt-node",
+    "@symon-ai/aws-crypto-encrypt-node": "file:../encrypt-node",
+    "@symon-ai/aws-crypto-kms-keyring-node": "file:../kms-keyring-node",
+    "@symon-ai/aws-crypto-material-management-node": "file:../material-management-node",
+    "@symon-ai/aws-crypto-raw-aes-keyring-node": "file:../raw-aes-keyring-node",
+    "@symon-ai/aws-crypto-raw-rsa-keyring-node": "file:../raw-rsa-keyring-node",
     "tslib": "^2.2.0"
   },
   "sideEffects": false,

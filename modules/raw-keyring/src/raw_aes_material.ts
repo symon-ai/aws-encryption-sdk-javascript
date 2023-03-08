@@ -24,7 +24,7 @@ import {
   KeyringTraceFlag,
   needs,
   EncryptionContext,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 import {
   WrappingSuiteIdentifier,

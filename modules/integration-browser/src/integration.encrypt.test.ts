@@ -9,7 +9,7 @@ import {
   buildClient,
   CommitmentPolicy,
   needs,
-} from '@aws-crypto/client-browser'
+} from '@symon-ai/aws-crypto-client-browser'
 import { toUtf8 } from '@aws-sdk/util-utf8-browser'
 const { encrypt } = buildClient(CommitmentPolicy.FORBID_ENCRYPT_ALLOW_DECRYPT)
 declare const expect: any

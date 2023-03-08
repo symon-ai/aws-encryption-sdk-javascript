@@ -4,7 +4,7 @@
 import {
   SignaturePolicy,
   ClientOptions,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 export interface DecryptStreamOptions {
   maxBodySize?: number

@@ -14,8 +14,8 @@ import {
   SignaturePolicySuites,
   ClientOptions,
   needs,
-} from '@aws-crypto/material-management-node'
-import { deserializeFactory, MessageHeaderV2 } from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-material-management-node'
+import { deserializeFactory, MessageHeaderV2 } from '@symon-ai/aws-crypto-serialize'
 import { VerifyInfo } from './verify_stream'
 
 const toUtf8 = (input: Uint8Array) =>

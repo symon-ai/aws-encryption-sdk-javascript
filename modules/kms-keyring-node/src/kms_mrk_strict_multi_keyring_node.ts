@@ -4,12 +4,12 @@
 import {
   getAwsKmsMrkAwareStrictMultiKeyringBuilder,
   AwsEsdkKMSInterface,
-} from '@aws-crypto/kms-keyring'
-import { KmsClientSupplier } from '@aws-crypto/kms-keyring'
+} from '@symon-ai/aws-crypto-kms-keyring'
+import { KmsClientSupplier } from '@symon-ai/aws-crypto-kms-keyring'
 import {
   MultiKeyringNode,
   NodeAlgorithmSuite,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management'
 import { getKmsClient } from '.'
 import { AwsKmsMrkAwareSymmetricKeyringNode } from './kms_mrk_keyring_node'
 

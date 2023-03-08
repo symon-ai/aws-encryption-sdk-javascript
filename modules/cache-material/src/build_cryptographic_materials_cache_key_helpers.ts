@@ -7,8 +7,8 @@ import {
   EncryptionRequest,
   EncryptedDataKey,
   EncryptionContext,
-} from '@aws-crypto/material-management'
-import { serializeFactory, uInt16BE } from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-material-management'
+import { serializeFactory, uInt16BE } from '@symon-ai/aws-crypto-serialize'
 import { compare } from './portable_compare'
 
 //  512 bits of 0 for padding between hashes in decryption materials cache ID generation.

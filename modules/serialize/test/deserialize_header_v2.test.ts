@@ -12,7 +12,7 @@ import {
   MessageFormat,
   needs,
   WebCryptoAlgorithmSuite,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import * as fixtures from './fixtures'
 
 const toUtf8 = (input: Uint8Array) => Buffer.from(input).toString()

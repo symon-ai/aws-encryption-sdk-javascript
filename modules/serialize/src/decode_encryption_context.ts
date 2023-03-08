@@ -10,7 +10,7 @@
  * See: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/message-format.html#header-structure
  */
 
-import { EncryptionContext, needs } from '@aws-crypto/material-management'
+import { EncryptionContext, needs } from '@symon-ai/aws-crypto-material-management'
 import { readElements } from './read_element'
 
 // To deal with Browser and Node.js I inject a function to handle utf8 encoding.

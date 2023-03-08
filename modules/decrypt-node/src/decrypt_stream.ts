@@ -5,7 +5,7 @@ import {
   NodeDefaultCryptographicMaterialsManager,
   KeyringNode,
   NodeMaterialsManager,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { ParseHeaderStream } from './parse_header_stream'
 import { VerifyStream } from './verify_stream'
 import { getDecipherStream } from './decipher_stream'

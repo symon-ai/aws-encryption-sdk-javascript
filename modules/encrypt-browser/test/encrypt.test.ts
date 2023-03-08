@@ -16,12 +16,12 @@ import {
   importForWebCryptoEncryptionMaterial,
   CommitmentPolicy,
   AlgorithmSuiteIdentifier,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import {
   deserializeFactory,
   decodeBodyHeader,
   deserializeSignature,
-} from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-serialize'
 import { buildEncrypt } from '../src/index'
 import { _encrypt } from '../src/encrypt'
 import { toUtf8, fromUtf8 } from '@aws-sdk/util-utf8-browser'

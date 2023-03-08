@@ -5,11 +5,11 @@ import {
   getAwsKmsMrkAwareDiscoveryMultiKeyringBuilder,
   KmsClientSupplier,
   AwsEsdkKMSInterface,
-} from '@aws-crypto/kms-keyring'
+} from '@symon-ai/aws-crypto-kms-keyring'
 import {
   MultiKeyringNode,
   NodeAlgorithmSuite,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import { getKmsClient } from '.'
 import { AwsKmsMrkAwareSymmetricDiscoveryKeyringNode } from './kms_mrk_discovery_keyring_node'
 

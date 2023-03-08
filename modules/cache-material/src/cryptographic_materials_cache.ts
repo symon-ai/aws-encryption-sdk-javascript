@@ -5,7 +5,7 @@ import {
   EncryptionMaterial,
   DecryptionMaterial,
   SupportedAlgorithmSuites,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 export interface CryptographicMaterialsCache<
   S extends SupportedAlgorithmSuites

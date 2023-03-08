@@ -10,7 +10,7 @@ import {
   MultiKeyringNode,
   Newable,
   KeyringNode,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 describe('buildAwsKmsMrkAwareStrictMultiKeyringNode', () => {
   class TestMrkAwareSymmetricKeyring extends AwsKmsMrkAwareSymmetricKeyringClass(

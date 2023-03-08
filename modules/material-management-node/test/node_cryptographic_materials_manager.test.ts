@@ -6,7 +6,7 @@
 import * as chai from 'chai'
 // @ts-ignore
 import chaiAsPromised from 'chai-as-promised'
-import { KeyringNode, CommitmentPolicy } from '@aws-crypto/material-management'
+import { KeyringNode, CommitmentPolicy } from '@symon-ai/aws-crypto-material-management'
 import { NodeDefaultCryptographicMaterialsManager } from '../src/node_cryptographic_materials_manager'
 import {
   NodeEncryptionMaterial,
@@ -16,7 +16,7 @@ import {
   KeyringTraceFlag,
   EncryptedDataKey,
 } from '../src/index'
-import { ENCODED_SIGNER_KEY } from '@aws-crypto/serialize'
+import { ENCODED_SIGNER_KEY } from '@symon-ai/aws-crypto-serialize'
 chai.use(chaiAsPromised)
 const { expect } = chai
 
@@ -156,7 +156,7 @@ describe('NodeDefaultCryptographicMaterialsManager', () => {
     ).to.throw()
   })
 
-  it('Precondition: NodeDefaultCryptographicMaterialsManager must reserve the ENCODED_SIGNER_KEY constant from @aws-crypto/serialize.', async () => {
+  it('Precondition: NodeDefaultCryptographicMaterialsManager must reserve the ENCODED_SIGNER_KEY constant from @symon-ai/aws-crypto-serialize.', async () => {
     const keyring = new TestKeyring()
     const cmm = new NodeDefaultCryptographicMaterialsManager(keyring)
     const encryptionContext = {

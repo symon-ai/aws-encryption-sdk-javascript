@@ -5,12 +5,12 @@ import {
   EncryptManifestList,
   KeyList,
   KeyInfoTuple,
-} from '@aws-crypto/integration-vectors'
+} from '@symon-ai/aws-crypto-integration-vectors'
 import { randomBytes } from 'crypto'
 import {
   AlgorithmSuiteIdentifier,
   EncryptionContext,
-} from '@aws-crypto/client-browser'
+} from '@symon-ai/aws-crypto-client-browser'
 import { URL } from 'url'
 import { readFileSync, writeFileSync } from 'fs'
 import got from 'got'

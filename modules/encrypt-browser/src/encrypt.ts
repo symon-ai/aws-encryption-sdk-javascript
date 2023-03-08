@@ -15,7 +15,7 @@ import {
   CommitmentPolicySuites,
   MessageFormat,
   ClientOptions,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import {
   serializeFactory,
   aadFactory,
@@ -27,9 +27,9 @@ import {
   Maximum,
   MessageIdLength,
   serializeMessageHeaderAuth,
-} from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-serialize'
 import { fromUtf8 } from '@aws-sdk/util-utf8-browser'
-import { getWebCryptoBackend } from '@aws-crypto/web-crypto-backend'
+import { getWebCryptoBackend } from '@symon-ai/aws-crypto-web-crypto-backend'
 
 const serialize = serializeFactory(fromUtf8)
 const { messageAADContentString, messageAAD } = aadFactory(fromUtf8)

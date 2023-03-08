@@ -4,11 +4,11 @@
 import {
   getAwsKmsMrkAwareStrictMultiKeyringBuilder,
   AwsEsdkKMSInterface,
-} from '@aws-crypto/kms-keyring'
+} from '@symon-ai/aws-crypto-kms-keyring'
 import {
   MultiKeyringWebCrypto,
   WebCryptoAlgorithmSuite,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import { getKmsClient } from '.'
 import { AwsKmsMrkAwareSymmetricKeyringBrowser } from './kms_mrk_keyring_browser'
 

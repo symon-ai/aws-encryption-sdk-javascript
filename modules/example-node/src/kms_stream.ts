@@ -6,8 +6,8 @@ import {
   buildClient,
   CommitmentPolicy,
   MessageHeader,
-} from '@aws-crypto/client-node'
-import { AlgorithmSuiteIdentifier } from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-client-node'
+import { AlgorithmSuiteIdentifier } from '@symon-ai/aws-crypto-material-management'
 
 /* This builds the client with the REQUIRE_ENCRYPT_REQUIRE_DECRYPT commitment policy,
  * which enforces that this client only encrypts using committing algorithm suites

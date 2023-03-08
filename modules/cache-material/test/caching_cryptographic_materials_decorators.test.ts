@@ -22,7 +22,7 @@ import {
   NodeEncryptionMaterial,
   NodeDecryptionMaterial,
   CommitmentPolicy,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 describe('decorateProperties', () => {
   it('basic usage', () => {

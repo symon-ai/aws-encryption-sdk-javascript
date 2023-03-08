@@ -13,17 +13,17 @@ import {
   KeyringWebCrypto,
   WebCryptoDecryptionMaterial,
   WebCryptoEncryptionMaterial,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import * as fixtures from './fixtures'
 import {
   CommitmentPolicy,
   MessageFormat,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import {
   KmsKeyringBrowser,
   KMS,
   getClient,
-} from '@aws-crypto/kms-keyring-browser'
+} from '@symon-ai/aws-crypto-kms-keyring-browser'
 import { fromBase64, toBase64 } from '@aws-sdk/util-base64-browser'
 import { toUtf8 } from '@aws-sdk/util-utf8-browser'
 chai.use(chaiAsPromised)

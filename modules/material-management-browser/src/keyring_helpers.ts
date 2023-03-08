@@ -5,11 +5,11 @@ import {
   WebCryptoEncryptionMaterial,
   WebCryptoDecryptionMaterial,
   WebCryptoMaterial,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 import { importCryptoKey } from './material_helpers'
 
-import { getWebCryptoBackend } from '@aws-crypto/web-crypto-backend'
+import { getWebCryptoBackend } from '@symon-ai/aws-crypto-web-crypto-backend'
 
 export async function importForWebCryptoEncryptionMaterial(
   material: WebCryptoEncryptionMaterial

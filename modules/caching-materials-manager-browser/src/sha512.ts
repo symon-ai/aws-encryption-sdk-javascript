@@ -5,8 +5,8 @@ import { fromUtf8 } from '@aws-sdk/util-utf8-browser'
 import {
   getWebCryptoBackend,
   getNonZeroByteBackend,
-} from '@aws-crypto/web-crypto-backend'
-import { concatBuffers } from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-web-crypto-backend'
+import { concatBuffers } from '@symon-ai/aws-crypto-serialize'
 
 export const sha512 = async (...inputs: (Uint8Array | string)[]) => {
   // Normalize to Uint8Array and squash into a single value.

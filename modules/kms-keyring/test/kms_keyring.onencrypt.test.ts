@@ -13,7 +13,7 @@ import {
   KeyringTraceFlag,
   Keyring,
   Newable,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 chai.use(chaiAsPromised)
 const { expect } = chai
 

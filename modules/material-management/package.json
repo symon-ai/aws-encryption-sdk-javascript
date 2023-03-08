@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/material-management",
+  "name": "@symon-ai/aws-crypto-material-management",
   "version": "3.2.0",
   "scripts": {
     "prepublishOnly": "npm run build",

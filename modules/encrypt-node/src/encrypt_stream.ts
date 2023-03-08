@@ -15,7 +15,7 @@ import {
   CommitmentPolicySuites,
   MessageFormat,
   ClientOptions,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { getFramedEncryptStream } from './framed_encrypt_stream'
 import { SignatureStream } from './signature_stream'
 import Duplexify from 'duplexify'
@@ -26,7 +26,7 @@ import {
   Maximum,
   MessageIdLength,
   serializeMessageHeaderAuth,
-} from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-serialize'
 
 // @ts-ignore
 import { pipeline } from 'readable-stream'

@@ -5,7 +5,7 @@
 
 // expect is from karma-jasmine
 declare const expect: any //https://jasmine.github.io/api/edge/global.html#expect
-import { MultiKeyringWebCrypto } from '@aws-crypto/client-browser'
+import { MultiKeyringWebCrypto } from '@symon-ai/aws-crypto-client-browser'
 import {
   AESKey,
   AesKeyInfo,
@@ -13,12 +13,12 @@ import {
   KMSKey,
   RSAKey,
   RsaKeyInfo,
-} from '@aws-crypto/integration-vectors'
+} from '@symon-ai/aws-crypto-integration-vectors'
 import {
   decryptMaterialsManagerWebCrypto,
   encryptMaterialsManagerWebCrypto,
 } from '../src/decrypt_materials_manager_web_crypto'
-import { KmsKeyInfo } from '@aws-crypto/integration-vectors'
+import { KmsKeyInfo } from '@symon-ai/aws-crypto-integration-vectors'
 import {
   validPrivateRSAKey,
   validPublicAESKey,

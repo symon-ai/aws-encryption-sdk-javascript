@@ -15,13 +15,13 @@ import {
   KeyringWebCrypto,
   WebCryptoDecryptionMaterial,
   WebCryptoEncryptionMaterial,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import * as fixtures from './fixtures'
 import {
   CommitmentPolicy,
   MessageFormat,
   WebCryptoAlgorithmSuite,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import { fromBase64 } from '@aws-sdk/util-base64-browser'
 chai.use(chaiAsPromised)
 const { expect } = chai

@@ -14,7 +14,7 @@ import {
   EncryptedDataKey,
   WebCryptoDecryptionMaterial,
   KeyringTraceFlag,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import { KMS as V3KMS } from '@aws-sdk/client-kms'
 
 chai.use(chaiAsPromised)

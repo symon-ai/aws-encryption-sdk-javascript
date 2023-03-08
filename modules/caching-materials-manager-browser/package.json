@@ -1,5 +1,5 @@
 {
-  "name": "@aws-crypto/caching-materials-manager-browser",
+  "name": "@symon-ai/aws-crypto-caching-materials-manager-browser",
   "version": "3.2.0",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -18,10 +18,10 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/cache-material": "file:../cache-material",
-    "@aws-crypto/material-management-browser": "file:../material-management-browser",
-    "@aws-crypto/serialize": "file:../serialize",
-    "@aws-crypto/web-crypto-backend": "file:../web-crypto-backend",
+    "@symon-ai/aws-crypto-cache-material": "file:../cache-material",
+    "@symon-ai/aws-crypto-material-management-browser": "file:../material-management-browser",
+    "@symon-ai/aws-crypto-serialize": "file:../serialize",
+    "@symon-ai/aws-crypto-web-crypto-backend": "file:../web-crypto-backend",
     "@aws-sdk/util-base64-browser": "3.1.0",
     "@aws-sdk/util-utf8-browser": "3.23.0",
     "tslib": "^2.2.0"

@@ -2,8 +2,8 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { Transform } from 'stream'
-import { GetSigner } from '@aws-crypto/material-management-node'
-import { serializeSignatureInfo } from '@aws-crypto/serialize'
+import { GetSigner } from '@symon-ai/aws-crypto-material-management-node'
+import { serializeSignatureInfo } from '@symon-ai/aws-crypto-serialize'
 
 type AWSSigner = ReturnType<GetSigner>
 
