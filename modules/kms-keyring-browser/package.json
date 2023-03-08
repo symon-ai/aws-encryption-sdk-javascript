@@ -1,6 +1,6 @@
 {
   "name": "@symon-ai/aws-crypto-kms-keyring-browser",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "scripts": {
     "prepublishOnly": "npm run generate-version.ts; npm run build",
     "generate-version.ts": "npx genversion --es6  src/version.ts",
@@ -19,10 +19,10 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@aws-sdk/client-kms": "^3.38.0",
     "@symon-ai/aws-crypto-kms-keyring": "file:../kms-keyring",
     "@symon-ai/aws-crypto-material-management-browser": "file:../material-management-browser",
     "@symon-ai/aws-crypto-web-crypto-backend": "file:../web-crypto-backend",
-    "@aws-sdk/client-kms": "^3.38.0",
     "tslib": "^2.2.0"
   },
   "sideEffects": false,
