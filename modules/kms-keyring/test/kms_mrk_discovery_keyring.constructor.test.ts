@@ -144,8 +144,8 @@ describe('AwsKmsMrkAwareSymmetricDiscoveryKeyring: constructor', () => {
     await test.clientRegion
     const prop = Object.getOwnPropertyDescriptor(test, 'clientRegion')
     expect(test.clientRegion).to.equal(region)
-    needs(prop, 'The clientRegion MUST exist')
-    expect(prop.writable).to.equal(false)
+    // needs(prop, 'The clientRegion MUST exist') // needs doesn't exist
+    expect(prop!.writable).to.equal(false)
   })
 
   it('Postcondition: Resolve the promise with the value set.', async () => {
