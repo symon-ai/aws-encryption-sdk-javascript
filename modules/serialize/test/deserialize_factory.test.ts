@@ -5,7 +5,7 @@
 
 import { expect } from 'chai'
 import { deserializeFactory } from '../src/deserialize_factory'
-import { WebCryptoAlgorithmSuite } from '@aws-crypto/material-management'
+import { WebCryptoAlgorithmSuite } from '@symon-ai/aws-crypto-material-management'
 import * as fixtures from './fixtures'
 const toUtf8 = (input: Uint8Array) => Buffer.from(input).toString()
 

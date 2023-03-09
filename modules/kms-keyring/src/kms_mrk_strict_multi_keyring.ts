@@ -6,7 +6,7 @@ import {
   SupportedAlgorithmSuites,
   MultiKeyring,
   Newable,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import { IAwsKmsMrkAwareSymmetricKeyring, KmsClientSupplier } from '.'
 import { AwsEsdkKMSInterface } from './kms_types'
 import { getRegionFromIdentifier } from './arn_parsing'

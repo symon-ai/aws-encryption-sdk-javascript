@@ -12,9 +12,9 @@ import {
   readOnlyProperty,
   unwrapDataKey,
   NodeAlgorithmSuite,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { randomBytes, createCipheriv, createDecipheriv } from 'crypto'
-import { serializeFactory, concatBuffers } from '@aws-crypto/serialize'
+import { serializeFactory, concatBuffers } from '@symon-ai/aws-crypto-serialize'
 import {
   _onEncrypt,
   _onDecrypt,
@@ -24,7 +24,7 @@ import {
   WrappingSuiteIdentifier,
   WrapKey,
   UnwrapKey,
-} from '@aws-crypto/raw-keyring'
+} from '@symon-ai/aws-crypto-raw-keyring'
 const fromUtf8 = (input: string) => Buffer.from(input, 'utf8')
 const toUtf8 = (input: Uint8Array) =>
   Buffer.from(input.buffer, input.byteOffset, input.byteLength).toString('utf8')
@@ -58,7 +58,7 @@ export class RawAesKeyringNode extends KeyringNode {
     const wrappingMaterial = new NodeRawAesMaterial(wrappingSuite)
       /* Precondition: unencryptedMasterKey must correspond to the NodeAlgorithmSuite specification.
        * Note: the KeyringTrace and flag are _only_ set because I am reusing an existing implementation.
-       * See: raw_aes_material.ts in @aws-crypto/raw-keyring for details
+       * See: raw_aes_material.ts in @symon-ai/aws-crypto-raw-keyring for details
        */
       .setUnencryptedDataKey(unencryptedMasterKey, {
         keyNamespace,

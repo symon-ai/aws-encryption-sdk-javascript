@@ -9,7 +9,7 @@ import {
   FrameBodyHeader,
   NonFrameBodyHeader,
 } from './types'
-import { needs } from '@aws-crypto/material-management'
+import { needs } from '@symon-ai/aws-crypto-material-management'
 
 /*
  * This public interface for reading the BodyHeader format is provided for

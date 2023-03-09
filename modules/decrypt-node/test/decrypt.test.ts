@@ -9,7 +9,7 @@ import chaiAsPromised from 'chai-as-promised'
 import {
   AlgorithmSuiteIdentifier,
   CommitmentPolicy,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { buildDecrypt } from '../src/index'
 import * as fixtures from './fixtures'
 chai.use(chaiAsPromised)

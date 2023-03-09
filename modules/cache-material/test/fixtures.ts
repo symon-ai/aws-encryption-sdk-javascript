@@ -6,7 +6,7 @@
 import {
   EncryptedDataKey,
   AlgorithmSuiteIdentifier,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 const partitionName = 'c15b9079-6d0e-42b6-8784-5e804b025692'
 const encryptionContextEmpty = {

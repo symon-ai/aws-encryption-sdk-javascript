@@ -1,6 +1,6 @@
 {
-  "name": "@aws-crypto/raw-aes-keyring-browser",
-  "version": "3.2.0",
+  "name": "@symon-ai/aws-crypto-raw-aes-keyring-browser",
+  "version": "4.0.3",
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsc -b tsconfig.json && tsc -b tsconfig.module.json",
@@ -18,12 +18,12 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/material-management-browser": "file:../material-management-browser",
     "@aws-crypto/random-source-browser": "1.0.0",
-    "@aws-crypto/raw-keyring": "file:../raw-keyring",
-    "@aws-crypto/serialize": "file:../serialize",
-    "@aws-crypto/web-crypto-backend": "file:../web-crypto-backend",
     "@aws-sdk/util-utf8-browser": "3.23.0",
+    "@symon-ai/aws-crypto-material-management-browser": "file:../material-management-browser",
+    "@symon-ai/aws-crypto-raw-keyring": "file:../raw-keyring",
+    "@symon-ai/aws-crypto-serialize": "file:../serialize",
+    "@symon-ai/aws-crypto-web-crypto-backend": "file:../web-crypto-backend",
     "tslib": "^2.2.0"
   },
   "sideEffects": false,
@@ -32,5 +32,13 @@
   "types": "./build/main/src/index.d.ts",
   "files": [
     "build/**/src/*"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/raw-aes-keyring-browser"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

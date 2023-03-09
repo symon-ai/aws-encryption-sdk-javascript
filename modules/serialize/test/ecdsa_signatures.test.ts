@@ -8,7 +8,7 @@ import { der2raw, raw2der } from '../src/ecdsa_signature'
 import {
   WebCryptoAlgorithmSuite,
   AlgorithmSuiteIdentifier,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 /*
  * This turns out the be very tricky.

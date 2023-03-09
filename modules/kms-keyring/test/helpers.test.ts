@@ -10,7 +10,7 @@ import {
   decrypt,
   kmsResponseToEncryptedDataKey,
 } from '../src/helpers'
-import { EncryptedDataKey } from '@aws-crypto/material-management'
+import { EncryptedDataKey } from '@symon-ai/aws-crypto-material-management'
 
 describe('kmsResponseToEncryptedDataKey', () => {
   it('return an EncryptedDataKey', () => {

@@ -12,12 +12,12 @@ import {
   AwsEsdkJsCryptoKey,
   WebCryptoMaterial,
   SupportedAlgorithmSuites,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import {
   kdfInfo,
   kdfCommitKeyInfo,
   MessageIdLength,
-} from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-serialize'
 
 import {
   getWebCryptoBackend,
@@ -25,7 +25,7 @@ import {
   getZeroByteSubtle,
   isFullSupportWebCryptoBackend,
   WebCryptoBackend,
-} from '@aws-crypto/web-crypto-backend'
+} from '@symon-ai/aws-crypto-web-crypto-backend'
 
 import { bytes2JWK } from './bytes2_jwk'
 

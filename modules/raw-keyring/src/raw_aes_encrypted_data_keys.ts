@@ -14,12 +14,12 @@
  * The AAD (encryption context) is the same as the message.
  */
 
-import { concatBuffers, uInt32BE } from '@aws-crypto/serialize'
+import { concatBuffers, uInt32BE } from '@symon-ai/aws-crypto-serialize'
 import {
   AlgorithmSuite,
   EncryptedDataKey,
   needs,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 export function rawAesEncryptedDataKeyFactory(
   toUtf8: (input: Uint8Array) => string,

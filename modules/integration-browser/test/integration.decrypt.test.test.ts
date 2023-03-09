@@ -7,14 +7,14 @@
 
 import { expect } from 'chai'
 import { fromBase64 } from '@aws-sdk/util-base64-browser'
-import { KeyInfoTuple, TestVectorResult } from '@aws-crypto/integration-vectors'
+import { KeyInfoTuple, TestVectorResult } from '@symon-ai/aws-crypto-integration-vectors'
 import {
   KeyringWebCrypto,
   MultiKeyringWebCrypto,
   WebCryptoMaterialsManager,
   DecryptResult,
   MessageHeader,
-} from '@aws-crypto/client-browser'
+} from '@symon-ai/aws-crypto-client-browser'
 import {
   testNegativeDecryptFixture,
   testPositiveDecryptFixture,

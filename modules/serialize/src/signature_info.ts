@@ -12,7 +12,7 @@
 
 import { concatBuffers } from './concat_buffers'
 import { uInt16BE } from './uint_util'
-import { needs } from '@aws-crypto/material-management'
+import { needs } from '@symon-ai/aws-crypto-material-management'
 
 export function serializeSignatureInfo(signature: Uint8Array) {
   return concatBuffers(uInt16BE(signature.byteLength), signature)

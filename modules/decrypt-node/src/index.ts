@@ -3,4 +3,4 @@
 
 export { buildDecrypt } from './decrypt_client'
 export { DecryptOutput } from './decrypt'
-export { MessageHeader } from '@aws-crypto/serialize'
+export { MessageHeader } from '@symon-ai/aws-crypto-serialize'

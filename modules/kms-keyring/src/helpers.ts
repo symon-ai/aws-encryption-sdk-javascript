@@ -16,7 +16,8 @@ import {
   EncryptionContext,
   EncryptedDataKey,
   needs,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
+import { DecryptCommand, EncryptCommand, GenerateDataKeyCommand } from '@aws-sdk/client-kms'
 
 export const KMS_PROVIDER_ID = 'aws-kms'
 
@@ -34,15 +35,12 @@ export async function generateDataKey<Client extends AwsEsdkKMSInterface>(
 
   /* Check for early return (Postcondition): clientProvider did not return a client for generateDataKey. */
   if (!client) return false
-  const v2vsV3Response = client.generateDataKey({
+  const dataKey = await client.send(new GenerateDataKeyCommand({
     KeyId,
     GrantTokens,
     NumberOfBytes,
     EncryptionContext,
-  })
-  const v2vsV3Promise =
-    'promise' in v2vsV3Response ? v2vsV3Response.promise() : v2vsV3Response
-  const dataKey = await v2vsV3Promise
+  }))
 
   return safeGenerateDataKey(dataKey)
 }
@@ -62,15 +60,12 @@ export async function encrypt<Client extends AwsEsdkKMSInterface>(
   /* Check for early return (Postcondition): clientProvider did not return a client for encrypt. */
   if (!client) return false
 
-  const v2vsV3Response = client.encrypt({
+  const kmsEDK = await client.send(new EncryptCommand({
     KeyId,
     Plaintext,
     EncryptionContext,
     GrantTokens,
-  })
-  const v2vsV3Promise =
-    'promise' in v2vsV3Response ? v2vsV3Response.promise() : v2vsV3Response
-  const kmsEDK = await v2vsV3Promise
+  }))
 
   return safeEncryptOutput(kmsEDK)
 }
@@ -92,15 +87,12 @@ export async function decrypt<Client extends AwsEsdkKMSInterface>(
   if (!client) return false
 
   /* The AWS KMS KeyId *must* be set. */
-  const v2vsV3Response = client.decrypt({
+  const dataKey = await client.send(new DecryptCommand({
     KeyId: providerInfo,
     CiphertextBlob: encryptedDataKey,
     EncryptionContext,
     GrantTokens,
-  })
-  const v2vsV3Promise =
-    'promise' in v2vsV3Response ? v2vsV3Response.promise() : v2vsV3Response
-  const dataKey = await v2vsV3Promise
+  }))
 
   return safeDecryptOutput(dataKey)
 }

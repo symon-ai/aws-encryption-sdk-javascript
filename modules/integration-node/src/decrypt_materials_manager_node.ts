@@ -13,7 +13,7 @@ import {
   RawAesWrappingSuiteIdentifier,
   RawRsaKeyringNode,
   WrappingSuiteIdentifier,
-} from '@aws-crypto/client-node'
+} from '@symon-ai/aws-crypto-client-node'
 import {
   AESKey,
   AesKeyInfo,
@@ -25,7 +25,7 @@ import {
   KmsMrkAwareKeyInfo,
   RSAKey,
   RsaKeyInfo,
-} from '@aws-crypto/integration-vectors'
+} from '@symon-ai/aws-crypto-integration-vectors'
 import { constants } from 'crypto'
 
 const Bits2RawAesWrappingSuiteIdentifier: {

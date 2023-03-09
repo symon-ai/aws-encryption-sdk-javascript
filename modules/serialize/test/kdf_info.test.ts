@@ -9,7 +9,7 @@ import { Buffer } from 'buffer'
 import {
   AlgorithmSuiteIdentifier,
   WebCryptoAlgorithmSuite,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 describe('kdfInfo', () => {
   it('should produce appropriate info', () => {

@@ -5,7 +5,7 @@ import {
   RawRsaKeyringNode,
   buildClient,
   CommitmentPolicy,
-} from '@aws-crypto/client-node'
+} from '@symon-ai/aws-crypto-client-node'
 import { generateKeyPair } from 'crypto'
 import { promisify } from 'util'
 const generateKeyPairAsync = promisify(generateKeyPair)

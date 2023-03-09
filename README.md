@@ -1,3 +1,16 @@
+## SYMON HOW TO PUBLISH
+
+1. Update version, remove `conventional-commits` if you want to specify verison
+
+```
+npx lerna version --conventional-commits --git-remote origin --yes --force-publish --no-changelog
+```
+
+2. `npm install`
+3. `git checkout -- .`
+4. `npx lerna publish from-package --yes`
+5. The publish call will update all dependencies from `file:../xxx` to the version number, so undo the last commit by either reverting+squashing, or something like `git reset --hard HEAD~1`
+
 ## AWS Encryption SDK for Javascript
 
 The AWS Encryption SDK for Javascript provides a fully compliant,
@@ -9,10 +22,10 @@ See [Support Policy](./SUPPORT_POLICY.rst) for for details on the current suppor
 
 ## Client Packages
 
-| Package | Description |
-|:--------|:------------|
-| [@aws-crypto/client-browser](https://npmjs.com/package/@aws-crypto/client-browser) | Client SDK for **Web applications** |
-| [@aws-crypto/client-node](https://npmjs.com/package/@aws-crypto/client-node) | Client SDK for Node.js client applications |
+| Package                                                                            | Description                                |
+| :--------------------------------------------------------------------------------- | :----------------------------------------- |
+| [@aws-crypto/client-browser](https://npmjs.com/package/@aws-crypto/client-browser) | Client SDK for **Web applications**        |
+| [@aws-crypto/client-node](https://npmjs.com/package/@aws-crypto/client-node)       | Client SDK for Node.js client applications |
 
 These client packages have everything you need to encrypt/decrypt.
 They are the primary starting point.
@@ -21,20 +34,20 @@ You can also compose the functional packages you need.
 
 ### Functional Packages
 
-| Package | Description |
-|:--------|:------------|
-| [@aws-crypto/encrypt-browser](https://npmjs.com/package/@aws-crypto/encrypt-browser) | Encrypt function for **Web applications** |
-| [@aws-crypto/encrypt-node](https://npmjs.com/package/@aws-crypto/encrypt-node) | Encrypt function for Node.js client applications |
-| [@aws-crypto/decrypt-browser](https://npmjs.com/package/@aws-crypto/decrypt-browser) | Decrypt function for **Web applications** |
-| [@aws-crypto/decrypt-node](https://npmjs.com/package/@aws-crypto/decrypt-node) | Decrypt function for Node.js client applications |
-| [@aws-crypto/kms-keyring-browser](https://npmjs.com/package/@aws-crypto/kms-keyring-browser) | Kms keyring for **Web applications** |
-| [@aws-crypto/kms-keyring-node](https://npmjs.com/package/@aws-crypto/kms-keyring-node) | Kms keyring for Node.js client applications |
-| [@aws-crypto/raw-rsa-keyring-browser](https://npmjs.com/package/@aws-crypto/raw-rsa-keyring-browser) | Raw RSA keyring for **Web applications** |
-| [@aws-crypto/raw-rsa-keyring-node](https://npmjs.com/package/@aws-crypto/raw-rsa-keyring-node) | Raw RSA keyring for Node.js client applications |
-| [@aws-crypto/raw-aes-keyring-browser](https://npmjs.com/package/@aws-crypto/raw-aes-keyring-browser) | Raw AES keyring for **Web applications** |
-| [@aws-crypto/raw-aes-keyring-node](https://npmjs.com/package/@aws-crypto/raw-aes-keyring-node) | Raw AES keyring for Node.js client applications |
-| [@aws-crypto/caching-materials-manager-browser](https://npmjs.com/package/@aws-crypto/caching-materials-manager-browser) | Caching Materials Manager for **Web applications** |
-| [@aws-crypto/caching-materials-manager-node](https://npmjs.com/package/@aws-crypto/caching-materials-manager-node) | Caching Materials Manager for Node.js client applications |
+| Package                                                                                                                  | Description                                               |
+| :----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
+| [@aws-crypto/encrypt-browser](https://npmjs.com/package/@aws-crypto/encrypt-browser)                                     | Encrypt function for **Web applications**                 |
+| [@aws-crypto/encrypt-node](https://npmjs.com/package/@aws-crypto/encrypt-node)                                           | Encrypt function for Node.js client applications          |
+| [@aws-crypto/decrypt-browser](https://npmjs.com/package/@aws-crypto/decrypt-browser)                                     | Decrypt function for **Web applications**                 |
+| [@aws-crypto/decrypt-node](https://npmjs.com/package/@aws-crypto/decrypt-node)                                           | Decrypt function for Node.js client applications          |
+| [@aws-crypto/kms-keyring-browser](https://npmjs.com/package/@aws-crypto/kms-keyring-browser)                             | Kms keyring for **Web applications**                      |
+| [@aws-crypto/kms-keyring-node](https://npmjs.com/package/@aws-crypto/kms-keyring-node)                                   | Kms keyring for Node.js client applications               |
+| [@aws-crypto/raw-rsa-keyring-browser](https://npmjs.com/package/@aws-crypto/raw-rsa-keyring-browser)                     | Raw RSA keyring for **Web applications**                  |
+| [@aws-crypto/raw-rsa-keyring-node](https://npmjs.com/package/@aws-crypto/raw-rsa-keyring-node)                           | Raw RSA keyring for Node.js client applications           |
+| [@aws-crypto/raw-aes-keyring-browser](https://npmjs.com/package/@aws-crypto/raw-aes-keyring-browser)                     | Raw AES keyring for **Web applications**                  |
+| [@aws-crypto/raw-aes-keyring-node](https://npmjs.com/package/@aws-crypto/raw-aes-keyring-node)                           | Raw AES keyring for Node.js client applications           |
+| [@aws-crypto/caching-materials-manager-browser](https://npmjs.com/package/@aws-crypto/caching-materials-manager-browser) | Caching Materials Manager for **Web applications**        |
+| [@aws-crypto/caching-materials-manager-node](https://npmjs.com/package/@aws-crypto/caching-materials-manager-node)       | Caching Materials Manager for Node.js client applications |
 
 ## Concepts
 
@@ -91,9 +104,9 @@ The AWS Encryption SDK for JavaScript is generally available
 as of October 1, 2019.
 There were breaking changes during the `preview`.
 
-* Passing encryption context to `encrypt` is now `{ encryptionContext?: EncryptionContext }` [#148][encryptionContext]
-* The return value of `encrypt` is now `{result: Uint8Array, messageHeader: MessageHeader}` [#211][encryptResult]
-* `encrypt` strictly enforces `plaintextLength` [#213][plaintextLength]
+- Passing encryption context to `encrypt` is now `{ encryptionContext?: EncryptionContext }` [#148][encryptionContext]
+- The return value of `encrypt` is now `{result: Uint8Array, messageHeader: MessageHeader}` [#211][encryptResult]
+- `encrypt` strictly enforces `plaintextLength` [#213][plaintextLength]
 
 [encryptionContext]: https://github.com/aws/aws-encryption-sdk-javascript/pull/148
 [encryptResult]: https://github.com/aws/aws-encryption-sdk-javascript/pull/211

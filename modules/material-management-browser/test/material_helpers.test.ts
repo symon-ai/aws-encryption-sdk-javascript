@@ -26,13 +26,13 @@ import {
   VerificationKey,
   AwsEsdkJsCryptoKeyPair,
   AwsEsdkJsKeyUsage,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import {
   synchronousRandomValues,
   getWebCryptoBackend,
   getZeroByteSubtle,
   getNonZeroByteBackend,
-} from '@aws-crypto/web-crypto-backend'
+} from '@symon-ai/aws-crypto-web-crypto-backend'
 
 import { fromBase64 } from '@aws-sdk/util-base64-browser'
 

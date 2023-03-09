@@ -14,13 +14,13 @@ import {
   AlgorithmSuiteIdentifier,
   NodeAlgorithmSuite,
   CommitmentPolicy,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import {
   deserializeFactory,
   decodeBodyHeader,
   deserializeSignature,
   MessageHeader,
-} from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-serialize'
 import { buildEncrypt } from '../src/index'
 import { _encrypt } from '../src/encrypt'
 import from from 'from2'

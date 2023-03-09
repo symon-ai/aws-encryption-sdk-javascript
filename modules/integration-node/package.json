@@ -1,6 +1,6 @@
 {
-  "name": "@aws-crypto/integration-node",
-  "version": "3.2.0",
+  "name": "@symon-ai/aws-crypto-integration-node",
+  "version": "4.0.3",
   "scripts": {
     "build": "tsc -b tsconfig.json",
     "lint": "run-s lint-*",
@@ -16,8 +16,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/client-node": "file:../client-node",
-    "@aws-crypto/integration-vectors": "file:../integration-vectors",
+    "@symon-ai/aws-crypto-client-node": "file:../client-node",
+    "@symon-ai/aws-crypto-integration-vectors": "file:../integration-vectors",
     "@types/got": "^9.6.9",
     "@types/stream-to-promise": "^2.2.0",
     "@types/yargs": "^17.0.1",
@@ -32,5 +32,13 @@
   "bin": "./build/main/src/cli.js",
   "files": [
     "build/**/src/*"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/integration-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

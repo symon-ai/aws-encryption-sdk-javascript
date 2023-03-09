@@ -11,7 +11,7 @@
  * But sending an invalid hash to a version that does not support oaepHash will be ignored.
  */
 
-import { needs, NotSupported } from '@aws-crypto/material-management-node'
+import { needs, NotSupported } from '@symon-ai/aws-crypto-material-management-node'
 
 import { constants, publicEncrypt } from 'crypto'
 

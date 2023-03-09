@@ -1,6 +1,6 @@
 {
-  "name": "@aws-crypto/raw-rsa-keyring-node",
-  "version": "3.2.0",
+  "name": "@symon-ai/aws-crypto-raw-rsa-keyring-node",
+  "version": "4.0.3",
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsc -b tsconfig.json && tsc -b tsconfig.module.json",
@@ -18,8 +18,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/material-management-node": "file:../material-management-node",
-    "@aws-crypto/raw-keyring": "file:../raw-keyring",
+    "@symon-ai/aws-crypto-material-management-node": "file:../material-management-node",
+    "@symon-ai/aws-crypto-raw-keyring": "file:../raw-keyring",
     "tslib": "^2.2.0"
   },
   "sideEffects": false,
@@ -28,5 +28,13 @@
   "types": "./build/main/src/index.d.ts",
   "files": [
     "build/**/src/*"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/raw-rsa-keyring-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

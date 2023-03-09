@@ -6,7 +6,7 @@
 import { expect } from 'chai'
 import { getDecipherStream } from '../src//decipher_stream'
 import { VerifyStream } from '../src/verify_stream'
-import { ContentType } from '@aws-crypto/serialize'
+import { ContentType } from '@symon-ai/aws-crypto-serialize'
 import from from 'from2'
 
 describe('getDecipherStream', () => {

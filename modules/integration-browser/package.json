@@ -1,6 +1,6 @@
 {
-  "name": "@aws-crypto/integration-browser",
-  "version": "3.2.0",
+  "name": "@symon-ai/aws-crypto-integration-browser",
+  "version": "4.0.3",
   "scripts": {
     "build": "tsc -b tsconfig.json",
     "lint": "run-s lint-*",
@@ -17,12 +17,12 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/client-browser": "file:../client-browser",
-    "@aws-crypto/integration-vectors": "file:../integration-vectors",
     "@aws-sdk/credential-provider-node": "^3.11.0",
     "@aws-sdk/karma-credential-loader": "3.38.0",
     "@aws-sdk/util-base64-browser": "^3.10.0",
     "@aws-sdk/util-utf8-browser": "3.23.0",
+    "@symon-ai/aws-crypto-client-browser": "file:../client-browser",
+    "@symon-ai/aws-crypto-integration-vectors": "file:../integration-vectors",
     "@trust/keyto": "^1.0.1",
     "@types/got": "^9.6.9",
     "@types/stream-to-promise": "^2.2.0",
@@ -50,5 +50,13 @@
   "files": [
     "build/**/src/*",
     "karma.conf.js"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/integration-browser"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

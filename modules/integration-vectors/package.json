@@ -1,6 +1,6 @@
 {
-  "name": "@aws-crypto/integration-vectors",
-  "version": "3.2.0",
+  "name": "@symon-ai/aws-crypto-integration-vectors",
+  "version": "4.0.3",
   "scripts": {
     "build": "tsc -b tsconfig.json",
     "lint": "run-s lint-*",
@@ -10,7 +10,7 @@
     "test": "npm run lint && npm run build && node ./build/main/index.js && npm run mocha"
   },
   "dependencies": {
-    "@aws-crypto/material-management": "file:../material-management",
+    "@symon-ai/aws-crypto-material-management": "file:../material-management",
     "@types/stream-to-promise": "^2.2.0",
     "@types/yauzl": "^2.9.1",
     "stream-to-promise": "^3.0.0",
@@ -33,5 +33,13 @@
     "email": "aws-cryptools@amazon.com",
     "url": "https://aws.amazon.com/javascript/"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/integration-vectors"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

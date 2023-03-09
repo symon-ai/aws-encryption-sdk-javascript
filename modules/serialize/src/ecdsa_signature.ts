@@ -14,7 +14,7 @@ import {
   needs,
   WebCryptoAlgorithmSuite,
   WebCryptoECDHCurve,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 // https://tools.ietf.org/html/rfc3279#section-2.2.2
 const ECDSASignature = asn.define('ECDSASignature', function (this: any) {

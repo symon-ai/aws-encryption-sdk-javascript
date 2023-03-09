@@ -10,7 +10,7 @@
  * See: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/message-format.html#header-structure
  */
 
-import { EncryptedDataKey, needs } from '@aws-crypto/material-management'
+import { EncryptedDataKey, needs } from '@symon-ai/aws-crypto-material-management'
 import { DeserializeOptions } from './types'
 import { readElements } from './read_element'
 

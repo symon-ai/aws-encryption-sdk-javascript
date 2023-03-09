@@ -11,7 +11,7 @@ import {
   Keyring,
   AlgorithmSuiteIdentifier,
   Newable,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 import { AwsKmsMrkAwareSymmetricDiscoveryKeyringClass } from '../src/kms_mrk_discovery_keyring'
 chai.use(chaiAsPromised)
 const { expect } = chai

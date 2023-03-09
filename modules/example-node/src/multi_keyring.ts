@@ -13,7 +13,7 @@ import {
   RawAesWrappingSuiteIdentifier,
   buildClient,
   CommitmentPolicy,
-} from '@aws-crypto/client-node'
+} from '@symon-ai/aws-crypto-client-node'
 import { randomBytes } from 'crypto'
 
 /* This builds the client with the REQUIRE_ENCRYPT_REQUIRE_DECRYPT commitment policy,

@@ -12,7 +12,7 @@ import {
   DecryptTest,
   KeyInfoTuple,
   DecryptionFixture,
-} from '@aws-crypto/integration-vectors'
+} from '@symon-ai/aws-crypto-integration-vectors'
 
 /* This function interacts with manifest information
  * and produces the fixtures in the `fixtures`

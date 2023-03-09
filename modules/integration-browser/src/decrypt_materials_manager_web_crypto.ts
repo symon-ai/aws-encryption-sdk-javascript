@@ -14,7 +14,7 @@ import {
   RawRsaKeyringWebCrypto,
   buildAwsKmsMrkAwareStrictMultiKeyringBrowser,
   buildAwsKmsMrkAwareDiscoveryMultiKeyringBrowser,
-} from '@aws-crypto/client-browser'
+} from '@symon-ai/aws-crypto-client-browser'
 import {
   RsaKeyInfo,
   AesKeyInfo,
@@ -26,7 +26,7 @@ import {
   KMSKey,
   KeyInfoTuple,
   buildGetKeyring,
-} from '@aws-crypto/integration-vectors'
+} from '@symon-ai/aws-crypto-integration-vectors'
 
 import { fromBase64 } from '@aws-sdk/util-base64-browser'
 // @ts-ignore

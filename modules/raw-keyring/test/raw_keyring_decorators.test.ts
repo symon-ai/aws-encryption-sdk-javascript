@@ -13,7 +13,7 @@ import {
   NodeDecryptionMaterial,
   EncryptedDataKey,
   unwrapDataKey,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
 describe('_onEncrypt', () => {
   it('will create UnencryptedDataKey and call _wrapKey', async () => {

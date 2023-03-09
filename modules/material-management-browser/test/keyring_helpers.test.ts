@@ -16,8 +16,8 @@ import {
   WebCryptoAlgorithmSuite,
   AlgorithmSuiteIdentifier,
   KeyringTraceFlag,
-} from '@aws-crypto/material-management'
-import { synchronousRandomValues } from '@aws-crypto/web-crypto-backend'
+} from '@symon-ai/aws-crypto-material-management'
+import { synchronousRandomValues } from '@symon-ai/aws-crypto-web-crypto-backend'
 
 chai.use(chaiAsPromised)
 const { expect } = chai

@@ -1,7 +1,8 @@
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import { EncryptionContext } from '@aws-crypto/material-management'
+import { EncryptionContext } from '@symon-ai/aws-crypto-material-management'
+import { DecryptCommand, EncryptCommand, GenerateDataKeyCommand } from '@aws-sdk/client-kms'
 
 export interface DecryptRequest {
   KeyId?: string
@@ -60,15 +61,5 @@ export interface AwsSdkV2Response<Response> {
 }
 
 export interface AwsEsdkKMSInterface {
-  decrypt(
-    args: DecryptRequest
-  ): Promise<DecryptResponse> | AwsSdkV2Response<DecryptResponse>
-  encrypt(
-    args: EncryptRequest
-  ): Promise<EncryptResponse> | AwsSdkV2Response<EncryptResponse>
-  generateDataKey(
-    args: GenerateDataKeyRequest
-  ):
-    | Promise<GenerateDataKeyResponse>
-    | AwsSdkV2Response<GenerateDataKeyResponse>
+  send(command: DecryptCommand | EncryptCommand | GenerateDataKeyCommand): Promise<DecryptResponse | EncryptResponse | GenerateDataKeyResponse>
 }

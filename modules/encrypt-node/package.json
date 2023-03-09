@@ -1,6 +1,6 @@
 {
-  "name": "@aws-crypto/encrypt-node",
-  "version": "3.2.0",
+  "name": "@symon-ai/aws-crypto-encrypt-node",
+  "version": "4.0.3",
   "scripts": {
     "prepublishOnly": "tsc -p tsconfig.json && tsc -p tsconfig.module.json",
     "lint": "run-s lint-*",
@@ -17,8 +17,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@aws-crypto/material-management-node": "file:../material-management-node",
-    "@aws-crypto/serialize": "file:../serialize",
+    "@symon-ai/aws-crypto-material-management-node": "file:../material-management-node",
+    "@symon-ai/aws-crypto-serialize": "file:../serialize",
     "@types/duplexify": "^3.6.0",
     "duplexify": "^4.1.1",
     "readable-stream": "^3.6.0",
@@ -30,5 +30,13 @@
   "types": "./build/main/src/index.d.ts",
   "files": [
     "build/**/src/*"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:symon-ai/aws-encryption-sdk-javascript.git",
+    "directory": "modules/encrypt-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

@@ -5,7 +5,7 @@ import {
   KmsKeyringNode,
   buildClient,
   CommitmentPolicy,
-} from '@aws-crypto/client-node'
+} from '@symon-ai/aws-crypto-client-node'
 
 /* A KMS CMK is required to generate the data key.
  * You need kms:GenerateDataKey permission on the CMK in generatorKeyId.

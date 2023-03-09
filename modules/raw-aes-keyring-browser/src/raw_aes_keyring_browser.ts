@@ -17,8 +17,8 @@ import {
   importForWebCryptoEncryptionMaterial,
   importForWebCryptoDecryptionMaterial,
   AwsEsdkJsCryptoKey,
-} from '@aws-crypto/material-management-browser'
-import { serializeFactory, concatBuffers } from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-material-management-browser'
+import { serializeFactory, concatBuffers } from '@symon-ai/aws-crypto-serialize'
 import {
   _onEncrypt,
   _onDecrypt,
@@ -28,13 +28,13 @@ import {
   WrappingSuiteIdentifier,
   WrapKey,
   UnwrapKey,
-} from '@aws-crypto/raw-keyring'
+} from '@symon-ai/aws-crypto-raw-keyring'
 import { fromUtf8, toUtf8 } from '@aws-sdk/util-utf8-browser'
 import { randomValuesOnly } from '@aws-crypto/random-source-browser'
 import {
   getWebCryptoBackend,
   getNonZeroByteBackend,
-} from '@aws-crypto/web-crypto-backend'
+} from '@symon-ai/aws-crypto-web-crypto-backend'
 const { serializeEncryptionContext } = serializeFactory(fromUtf8)
 const { rawAesEncryptedDataKey } = rawAesEncryptedDataKeyFactory(
   toUtf8,
@@ -70,7 +70,7 @@ export class RawAesKeyringWebCrypto extends KeyringWebCrypto {
     const wrappingMaterial = new WebCryptoRawAesMaterial(wrappingSuite)
       /* Precondition: unencryptedMasterKey must correspond to the WebCryptoAlgorithmSuite specification.
        * Note: the KeyringTrace and flag are _only_ set because I am reusing an existing implementation.
-       * See: raw_aes_material.ts in @aws-crypto/raw-keyring for details
+       * See: raw_aes_material.ts in @symon-ai/aws-crypto-raw-keyring for details
        */
       .setCryptoKey(masterKey, {
         keyNamespace,
@@ -155,7 +155,7 @@ export class RawAesKeyringWebCrypto extends KeyringWebCrypto {
     const material = new WebCryptoRawAesMaterial(wrappingSuite)
       /* Precondition: masterKey must correspond to the algorithm suite specification.
        * Note: the KeyringTrace and flag are _only_ set because I am reusing an existing implementation.
-       * See: raw_aes_material.ts in @aws-crypto/raw-keyring for details
+       * See: raw_aes_material.ts in @symon-ai/aws-crypto-raw-keyring for details
        */
       .setUnencryptedDataKey(masterKey, {
         keyNamespace: 'importOnly',

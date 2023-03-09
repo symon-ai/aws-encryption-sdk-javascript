@@ -12,7 +12,7 @@ import {
 import {
   NodeAlgorithmSuite,
   AlgorithmSuiteIdentifier,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 const suite = new NodeAlgorithmSuite(
   AlgorithmSuiteIdentifier.ALG_AES128_GCM_IV12_TAG16

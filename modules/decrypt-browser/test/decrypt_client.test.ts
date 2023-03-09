@@ -6,7 +6,7 @@
 import * as chai from 'chai'
 // @ts-ignore
 import chaiAsPromised from 'chai-as-promised'
-import { CommitmentPolicy } from '@aws-crypto/material-management-node'
+import { CommitmentPolicy } from '@symon-ai/aws-crypto-material-management-node'
 import { buildDecrypt } from '../src/index'
 
 chai.use(chaiAsPromised)

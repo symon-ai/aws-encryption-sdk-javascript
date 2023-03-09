@@ -10,7 +10,7 @@ import {
   buildCryptographicMaterialsCacheKeyHelpers,
   CryptographicMaterialsCache,
   CachingMaterialsManagerInput,
-} from '@aws-crypto/cache-material'
+} from '@symon-ai/aws-crypto-cache-material'
 import {
   WebCryptoMaterialsManager,
   WebCryptoDefaultCryptographicMaterialsManager,
@@ -18,10 +18,10 @@ import {
   KeyringWebCrypto,
   WebCryptoGetEncryptionMaterials,
   WebCryptoGetDecryptMaterials,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 import { fromUtf8, toUtf8 } from '@aws-sdk/util-utf8-browser'
 import { toBase64 } from '@aws-sdk/util-base64-browser'
-import { synchronousRandomValues } from '@aws-crypto/web-crypto-backend'
+import { synchronousRandomValues } from '@symon-ai/aws-crypto-web-crypto-backend'
 import { sha512 } from './sha512'
 
 const cacheKeyHelpers = buildCryptographicMaterialsCacheKeyHelpers(

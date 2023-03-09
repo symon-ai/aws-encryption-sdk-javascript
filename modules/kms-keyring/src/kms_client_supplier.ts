@@ -1,7 +1,7 @@
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import { needs } from '@aws-crypto/material-management'
+import { needs } from '@symon-ai/aws-crypto-material-management'
 import { AwsEsdkKMSInterface } from './kms_types'
 
 interface KMSConstructibleNonOption<
@@ -111,10 +111,10 @@ export function deferCache<Client extends AwsEsdkKMSInterface>(
     clientsCache[region] = false
     return false
   }
-  const { encrypt, decrypt, generateDataKey } = client
+  const { send } = client
 
   return (
-    ['encrypt', 'decrypt', 'generateDataKey'] as (keyof AwsEsdkKMSInterface)[]
+    ['send'] as (keyof AwsEsdkKMSInterface)[]
   ).reduce(wrapOperation, client)
 
   /* Wrap each of the operations to cache the client on response */
@@ -128,16 +128,9 @@ export function deferCache<Client extends AwsEsdkKMSInterface>(
       args: any
     ): Promise<any> {
       // @ts-ignore (there should be a TypeScript solution for this)
-      const v2vsV3Response = original.call(client, args)
-      const v2vsV3Promise =
-        'promise' in v2vsV3Response ? v2vsV3Response.promise() : v2vsV3Response
-      return v2vsV3Promise
+      return original.call(client, args)
         .then((response: any) => {
-          clientsCache[region] = Object.assign(client, {
-            encrypt,
-            decrypt,
-            generateDataKey,
-          })
+          clientsCache[region] = Object.assign(client, { send })
           return response
         })
         .catch(async (e: any) => {
@@ -146,11 +139,7 @@ export function deferCache<Client extends AwsEsdkKMSInterface>(
            * but with the request made.
            */
           if (e.$metadata && e.$metadata.httpStatusCode) {
-            clientsCache[region] = Object.assign(client, {
-              encrypt,
-              decrypt,
-              generateDataKey,
-            })
+            clientsCache[region] = Object.assign(client, { send })
           }
           // The request was not successful
           return Promise.reject(e)

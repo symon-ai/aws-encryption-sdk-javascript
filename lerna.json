@@ -2,8 +2,11 @@
   "packages": [
     "modules/*"
   ],
-  "version": "3.2.0",
+  "version": "4.0.3",
   "command": {
+    "publish": {
+      "registry": "https://npm.pkg.github.com"
+    },
     "bootstrap": {
       "nohoist": [
         "typedoc"

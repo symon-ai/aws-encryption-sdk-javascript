@@ -4,14 +4,14 @@
 import {
   NodeMaterialsManager,
   KeyringNode,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { _decryptStream } from './decrypt_stream'
 import { DecryptParameters } from './types'
 
 // @ts-ignore
 import { finished } from 'readable-stream'
 import { Readable, Duplex } from 'stream'
-import { MessageHeader } from '@aws-crypto/serialize'
+import { MessageHeader } from '@symon-ai/aws-crypto-serialize'
 
 export interface DecryptOutput {
   plaintext: Buffer

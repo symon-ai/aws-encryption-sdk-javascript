@@ -6,7 +6,7 @@ import {
   CommitmentPolicy,
   ClientOptions,
   needs,
-} from '@aws-crypto/material-management-browser'
+} from '@symon-ai/aws-crypto-material-management-browser'
 
 type CurryFirst<fn extends (...a: any[]) => any> = fn extends (
   _: any,

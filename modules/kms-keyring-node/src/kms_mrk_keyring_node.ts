@@ -5,12 +5,12 @@ import {
   AwsKmsMrkAwareSymmetricKeyringClass,
   AwsKmsMrkAwareSymmetricKeyringInput,
   AwsEsdkKMSInterface,
-} from '@aws-crypto/kms-keyring'
+} from '@symon-ai/aws-crypto-kms-keyring'
 import {
   KeyringNode,
   Newable,
   NodeAlgorithmSuite,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 export type AwsKmsMrkAwareSymmetricKeyringNodeInput =
   AwsKmsMrkAwareSymmetricKeyringInput<AwsEsdkKMSInterface>

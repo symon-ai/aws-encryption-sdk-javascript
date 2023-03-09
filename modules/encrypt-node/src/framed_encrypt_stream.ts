@@ -6,7 +6,7 @@ import {
   aadFactory,
   MessageHeader,
   Maximum,
-} from '@aws-crypto/serialize'
+} from '@symon-ai/aws-crypto-serialize'
 // @ts-ignore
 import { Transform as PortableTransform } from 'readable-stream'
 import { Transform } from 'stream'
@@ -15,7 +15,7 @@ import {
   AwsEsdkJsCipherGCM,
   needs,
   NodeAlgorithmSuite,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 
 const fromUtf8 = (input: string) => Buffer.from(input, 'utf8')
 const serialize = serializeFactory(fromUtf8)

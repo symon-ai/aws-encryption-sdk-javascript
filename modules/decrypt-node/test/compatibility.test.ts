@@ -11,7 +11,7 @@ import {
   KeyringTraceFlag,
   NodeDecryptionMaterial,
   NodeEncryptionMaterial,
-} from '@aws-crypto/material-management-node'
+} from '@symon-ai/aws-crypto-material-management-node'
 import { buildDecrypt } from '../src/index'
 import * as fixtures from './fixtures'
 chai.use(chaiAsPromised)
@@ -20,9 +20,9 @@ import {
   CommitmentPolicy,
   MessageFormat,
   needs,
-} from '@aws-crypto/material-management'
+} from '@symon-ai/aws-crypto-material-management'
 
-import { KmsKeyringNode } from '@aws-crypto/kms-keyring-node'
+import { KmsKeyringNode } from '@symon-ai/aws-crypto-kms-keyring-node'
 
 const { decrypt } = buildDecrypt(CommitmentPolicy.FORBID_ENCRYPT_ALLOW_DECRYPT)
 
